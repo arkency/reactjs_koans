@@ -4,7 +4,7 @@
   "description": "React.js Koans",
   "main": "index.js",
   "scripts": {
-    "test-es6": "mocha -b --compilers js:mocha-traceur test/es6/**/*.js ; true"
+    "test-es6": "jsx -x jsx --es6module exercises/es6 src/es6 >/dev/null && mocha -b --compilers js:mocha-traceur test/es6/**/*.js ; true"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "mocha": "^2.2.4",
     "mocha-traceur": "^2.1.0",
-    "react": "^0.13.2"
+    "react": "^0.13.2",
+    "react-tools": "^0.13.2"
   }
 }
