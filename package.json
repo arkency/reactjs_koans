@@ -4,7 +4,7 @@
   "description": "React.js Koans",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-es6": "mocha -b --harmony test/es6/**/*.js ; true"
   },
   "repository": {
     "type": "git",
