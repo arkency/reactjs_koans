@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/arkency/reactjs_koans/issues"
   },
-  "homepage": "https://github.com/arkency/reactjs_koans"
+  "homepage": "https://github.com/arkency/reactjs_koans",
+  "devDependencies": {
+    "mocha": "^2.2.4"
+  }
 }
