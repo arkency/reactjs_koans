@@ -4,7 +4,7 @@
   "description": "React.js Koans",
   "main": "index.js",
   "scripts": {
-    "test-es6": "jsx -x jsx --es6module exercises/es6 src/es6 >/dev/null && mocha -b --compilers js:mocha-traceur test/es6/**/*.js ; true"
+    "test-es6": "jsx -x jsx --es6module exercises/es6 src/es6 >/dev/null && mocha -b --compilers js:mocha-traceur -r test/es6/tests-helper.js test/es6/**/*.js ; true"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/arkency/reactjs_koans",
   "devDependencies": {
+    "jsdom": "^3.1.2",
     "mocha": "^2.2.4",
     "mocha-traceur": "^2.1.0",
     "react": "^0.13.2",
