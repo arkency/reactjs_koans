@@ -12,7 +12,11 @@ describe("01 - HelloWorld", () => {
     return component = React.render(React.createElement(HelloWorld), elem);
   });
 
-  it("should render HTML span with Hello World text", function() {
+  afterEach( () => {
+    React.unmountComponentAtNode(React.findDOMNode(component));
+  });
+
+  it("should complete all tasks", () => {
     var divTags = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, 'div');
     var spanTags = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, 'span');
 
