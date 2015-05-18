@@ -25,8 +25,8 @@
     "jsdom": "^3.1.2",
     "mocha": "^2.2.4",
     "mocha-traceur": "^2.1.0",
-    "react": "^0.13.2",
-    "react-tools": "^0.13.2"
+    "react": "^0.13.3",
+    "react-tools": "^0.13.3"
   },
   "dependencies": {
     "lodash": "^3.8.0"
