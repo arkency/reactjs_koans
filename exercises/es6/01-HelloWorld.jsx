@@ -18,7 +18,7 @@ class HelloWorld extends React.Component {
     // is much more popular, so we will stick with it.
     render() {
         return(
-            <div>Fill Me In!</div>
+            <div>FILL ME IN!</div>
         );
     }
 }
