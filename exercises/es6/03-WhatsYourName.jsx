@@ -4,6 +4,8 @@ class WhatsYourName extends React.Component {
   constructor(props) {
     super(props);
     this.state = { name: "" };
+
+    this.onNameChange = this.onNameChange.bind(this);
   }
 
   onNameChange(event) {
