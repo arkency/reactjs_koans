@@ -56,6 +56,11 @@ class WhatsYourName extends React.Component {
 
   // We can deined our own methods in React's component class. That's really convenient way to 
   // make our code much clearner.
+  //
+  // `event` variable doesn't contain only value we entered into input field. You should find
+  // that value in this object
+  //
+  // Hint: use `console.log`.
   onNameChange(event) {
     // Huh... There's something wrong here...
     this.setState({attribute: "Something!"});
