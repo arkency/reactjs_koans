@@ -27,5 +27,8 @@
     "mocha-traceur": "^2.1.0",
     "react": "^0.13.2",
     "react-tools": "^0.13.2"
+  },
+  "dependencies": {
+    "lodash": "^3.8.0"
   }
 }
