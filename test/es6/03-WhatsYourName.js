@@ -9,6 +9,12 @@ describe("03 - Whats Your Name?", () => {
   var paragraphs;
   var inputs; 
 
+  var nameInParagraphEqualsTo = (paragraph, name) => {
+    var children = paragraph.props.children;
+    var text = _.isArray(children) ? children.join() : children;
+    return _.isEqual(text, `Hello ${ name }`);
+  }
+
   beforeEach( () => {
     var elem = document.createElement('div');
     elem = document.body.appendChild(elem);
@@ -32,17 +38,26 @@ describe("03 - Whats Your Name?", () => {
         var input     = _.first(inputs);
         var paragraph = _.first(paragraphs);
 
-        var nameInParagraphEqualsTo = (name) => {
-          return _.isEqual(paragraph.props.children, ['Hello ', name]);
-        }
-
         React.addons.TestUtils.Simulate.change(input, {target: { value: "XYZ" } });
-        assert.equal(nameInParagraphEqualsTo('XYZ'), true, "After changing name in input, we should see the change in paragraph.");
+        assert.equal(nameInParagraphEqualsTo(paragraph, 'XYZ'), true, "After changing name in input, we should see the change in paragraph.");
 
         React.addons.TestUtils.Simulate.change(input, {target: { value: "ZYX" } });
-        assert.equal(nameInParagraphEqualsTo('ZYX'), true, "After changing name in input for the second time, we should see the change in paragraph.");
+        assert.equal(nameInParagraphEqualsTo(paragraph, 'ZYX'), true, "After changing name in input for the second time, we should see the change in paragraph.");
       });
-    })
-  });
+    });
 
+    describe("Task #2 - don't greet user if he didn't provide a name", () => {
+      it("Should display welcoming message if user didn't provide his name", () => {
+        var input     = _.first(inputs);
+        var paragraph = _.first(paragraphs);
+
+
+        React.addons.TestUtils.Simulate.change(input, {target: { value: "" } });
+        assert.equal(paragraph.props.children, "Hey there. Enter you name.", "If user didn't input name, component should display text encouraging the user to do so.");
+
+        React.addons.TestUtils.Simulate.change(input, {target: { value: "XYZ" } });
+        assert.equal(nameInParagraphEqualsTo(paragraph, 'XYZ'), true, "After changing name in input, we should see the change in paragraph.");
+      });
+    });
+  });
 });
