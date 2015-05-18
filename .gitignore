@@ -10,3 +10,4 @@ coverage
 build/Release
 node_modules
 *.module-cache
+src
