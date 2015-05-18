@@ -23,6 +23,7 @@ var React = require("react");
 // Warning: Do not try to change the `render` structure. But it's good idea to look how it looks like
 //
 // TASK #2: If there are no name given, we shouldn't display the welcoming message.
+//          Display text: "Hey there. Enter you name." - just copy it
 //          Use temporary variables to achieve the goal. E.g.
 //          ```
 //          render() {
@@ -43,6 +44,8 @@ class WhatsYourName extends React.Component {
   // If nobody sets state for component, it will be `null`. In render we are referring to 
   // `state.name`. If we don't set state, we will get error, because we would try to get
   // key from `null`
+  //
+  // Think about it: you could set initial user's name from cookie! What else could you do here?
   constructor(props) {
     super(props);
     this.state = { name: "" };
