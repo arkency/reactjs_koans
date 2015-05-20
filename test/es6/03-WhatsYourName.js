@@ -53,7 +53,7 @@ describe("03 - Whats Your Name?", () => {
 
 
         React.addons.TestUtils.Simulate.change(input, {target: { value: "" } });
-        assert.equal(paragraph.props.children, "Hey there. Enter you name.", "If user didn't input name, component should display text encouraging the user to do so.");
+        assert.equal(paragraph.props.children, "Hey there. Enter your name.", "If user didn't input name, component should display text encouraging the user to do so.");
 
         React.addons.TestUtils.Simulate.change(input, {target: { value: "XYZ" } });
         assert.equal(nameInParagraphEqualsTo(paragraph, 'XYZ'), true, "After changing name in input, we should see the change in paragraph.");
