@@ -11,7 +11,7 @@ describe("03 - Whats Your Name?", () => {
 
   var nameInParagraphEqualsTo = (paragraph, name) => {
     var children = paragraph.props.children;
-    var text = _.isArray(children) ? children.join() : children;
+    var text = _.isArray(children) ? children.join("") : children;
     return _.isEqual(text, `Hello ${ name }`);
   }
 
