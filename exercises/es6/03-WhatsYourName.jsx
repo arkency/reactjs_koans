@@ -1,6 +1,6 @@
 var React = require("react");
 
-// Let's see get to the most important feature of React.js - reactive state.
+// Let's get to the most important feature of React.js - reactive state.
 // Each React component has 2 important objects:
 //  * Properties - we pass these values when we create component. They don't change over entire 
 //                 life of component.
