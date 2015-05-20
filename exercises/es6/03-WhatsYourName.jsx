@@ -23,7 +23,7 @@ var React = require("react");
 // Warning: Do not try to change the `render` structure. But it's good idea to look how it looks like
 //
 // TASK #2: If there are no name given, we shouldn't display the welcoming message.
-//          Display text: "Hey there. Enter you name." - just copy it
+//          Display text: "Hey there. Enter your name." - just copy it
 //          Use temporary variables to achieve the goal. E.g.
 //          ```
 //          render() {
