@@ -16,4 +16,4 @@ You would need to complete given tasks. Prepared test would check if they were d
   1. You should fill code in `exercises` directory and run tests to see if you did everything right.
   2. You must do exercises in given order.
   3. Try to not peak the tests files! It contains spoilers.
-  4. To run tests, use `test-es6`
+  4. To run tests, use `npm run test-es6`
