@@ -9,7 +9,8 @@ You would need to complete given tasks. Prepared test would check if they were d
 ## Installation:
 
   1. Clone repository.
-  2. `npm install`
+  2. Copy the content of `koans` directory into `exercises` directory.
+  3. `npm install`
 
 ## Instructions:
 
