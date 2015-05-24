@@ -17,7 +17,7 @@ var Answers = {
   // TIP: See exercise #2.
   answer4: "class",
 
-  // Question #5: Can component's properties after component's initialization?
+  // Question #5: Can component's properties be changed after its initialization?
   // TIP: See exercise #3
   answer5: null, // true/false?
 
