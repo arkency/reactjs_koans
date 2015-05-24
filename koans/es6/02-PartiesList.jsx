@@ -1,16 +1,14 @@
 var React = require("react");
 
 // We will work on creating dynamic list of parties nearby.
-// Let's standafirst see how to render list of items
+// Let's see how to render list of items.
 //
 // TASK #1: Add another party (or parties) to the list.
-// TASK #2: Change class attribute of the list to 'parties-list'.
+// TASK #2: Change `ul` HTML attribute `class` to 'parties-list'.
 
 class PartiesList extends React.Component {
-    // We can nest DOM elements delivered by React in itself just like HTML elements. See how
-    // this list looks like. Does it look similar to you?
-    //
-    // You can nest every React element in render method.
+    // We can nest DOM elements delivered by React just like HTML elements. See how this list looks 
+    // like. Doesn't it look similar?
     render() {
       return(
         <ul className="FILL ME">
@@ -19,7 +17,6 @@ class PartiesList extends React.Component {
       );
     }
     // Think about it: Why is that `className` attribute not called just `class`?
-    //
     // Hint: JSX isn't HTML.
 }
 
