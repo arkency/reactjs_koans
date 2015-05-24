@@ -11,6 +11,7 @@ class HelloWorld extends React.Component {
     // To define component's render method, we use syntax called JSX. As you can see it looks
     // similar to HTML. You can use normal JavaScript too, but JSX is much more popular, so we will
     // stick to it.
+    // JSX gets converted to JavaScript code. It is here just for readability purposes.
     //
     // Note: You can read about `render` syntax here: https://facebook.github.io/react/docs/displaying-data.html
     //
