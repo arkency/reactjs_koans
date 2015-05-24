@@ -4,7 +4,7 @@ var React = require("react");
 // Each React component has 2 important hashes:
 //  * Properties - we pass these values when we create component. They don't change over entire 
 //                 life of component.
-//  * State      - this values can change over entire life of component. When you change some value 
+//  * State      - these values can change over entire life of component. When you change some value 
 //                 in `state` object, React will re-calculate `render` method and update HTML to 
 //                 look exactly like specifed in class.
 //
