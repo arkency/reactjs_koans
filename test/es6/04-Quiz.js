@@ -3,7 +3,7 @@ import Answers from '../../src/es6/04-Quiz.js';
 
 describe("04 - Quiz", () => {
   it("Question #1", () => {
-    assert.equal(Answers.answer1, "React.Component", "Check the line that contains `extends` word.")
+    assert.equal(Answers.answer1 === "React.Component", true, "Check the line that contains `extends` word.")
   });
 
   it("Question #2", () => {
@@ -11,11 +11,11 @@ describe("04 - Quiz", () => {
   });
 
   it("Question #3", () => {
-    assert.equal(Answers.answer3, 'render', "In every component we did create there was one method with HTML-like looking code (JSX). What was that method?");
+    assert.equal(Answers.answer3 === 'render', true, "In every component we did create there was one method with HTML-like looking code (JSX). What was that method?");
   });
 
   it("question #4", () => {
-    assert.equal(Answers.answer4, 'className', "`class` is a reserved word in JavaScript. See exercise 2.");
+    assert.equal(Answers.answer4 === 'className', true, "`class` is a reserved word in JavaScript. See exercise 2.");
   });
 
   it("Question #5", () => {
@@ -23,7 +23,7 @@ describe("04 - Quiz", () => {
   });
 
   it("Question #6", () => {
-    assert.equal(Answers.answer6, 'setState', "See the `onNameChange` method from exercise #3");
+    assert.equal(Answers.answer6 === 'setState', true, "See the `onNameChange` method from exercise #3");
   });
 
   it("Question #7", () => {
