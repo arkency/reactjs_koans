@@ -4,7 +4,11 @@ class GroceryList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      groceries: []
+      groceries: [
+        {
+          name: "Test"
+        } 
+      ]
     };
 
     this.addGroceryItem = this.addGroceryItem.bind(this);
@@ -16,15 +20,11 @@ class GroceryList extends React.Component {
 
   render() {
     let groceriesComponents = [];
-    for(grocery in this.state.groceries) {
+    for(let grocery of this.state.groceries) {
       groceriesComponents.push(<GroceryListItem grocery={grocery} />);
     }
 
-    return (
-      <ul>
-        {groceriesComponents}              
-      </ul>
-    );
+    return (<span>FILL ME IN</span>);
   } 
 }
 
@@ -41,3 +41,5 @@ class GroceryListItem extends React.Component {
     return (<li>{this.props.grocery.name}</li>);
   }
 }
+
+export default GroceryList;
