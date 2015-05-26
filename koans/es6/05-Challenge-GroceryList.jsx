@@ -1,3 +1,9 @@
+/**
+  * ATTENTION!
+  * This exercise is under construction. Some tasks may be finished and working, but don't expect it
+  * working fully until this comment disappears!
+  **/
+
 var React = require("react");
 
 // This exercise would be a bit bigger than previous exercises. We would make reactive grocery list.
