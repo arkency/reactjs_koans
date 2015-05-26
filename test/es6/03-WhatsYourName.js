@@ -29,14 +29,12 @@ describe("03 - What's Your Name?", () => {
 
   describe("should complete all tasks", () => {
     describe("Task #1 - greet user", () => {
-      it("There should be only required tags rendered", () => {
-        assert.equal(paragraphs.length, 1, "There should be only one paragraph on component");
-        assert.equal(inputs.length, 1, "There should be only one input on component");
-      });
-
       it("Should change name in paragraph on name change in input", () =>{
         var input     = _.first(inputs);
         var paragraph = _.first(paragraphs);
+
+        assert.equal(paragraphs.length, 1, "There should be only one paragraph on component");
+        assert.equal(inputs.length, 1, "There should be only one input on component");
 
         React.addons.TestUtils.Simulate.change(input, {target: { value: "XYZ" } });
         assert.equal(nameInParagraphEqualsTo(paragraph, 'XYZ'), true, "After changing name in input, we should see the change in paragraph.");
