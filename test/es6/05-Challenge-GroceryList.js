@@ -21,16 +21,14 @@ describe("05 - Challenge - Grocery List", () => {
     it('There should be an unordered list of groceries', () => {
       let rootElement = React.findDOMNode(component);
 
-      assert.equal(rootElement.nodeName, "UL", "list of groceries should be an unordered list (<ul> tag)");
+      assert.equal(rootElement.nodeName, "UL", "GroceriesList should render HTML list (<ul>)");
 
-      let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(
-        component, "li"
-      );
+      let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
 
-      assert.equal(groceryListItems.length, 1, "there should be exactly one element on the list");
+      assert.equal(groceryListItems.length, 1, "There should be exactly one element on the groceries list");
 
       let groceryItem = _.first(groceryListItems);
-      assert.equal(groceryItem.props.children, "Test", "there should be a name of grocery in a list item"); 
+      assert.equal(groceryItem.props.children, "Test", "GroceriesListItem should display a grocery name"); 
     });
   });
 });
