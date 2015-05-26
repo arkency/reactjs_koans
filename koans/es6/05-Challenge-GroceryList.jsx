@@ -1,5 +1,10 @@
 var React = require("react");
 
+// This exercise would be a bit bigger than previous exercises. We would make reactive grocery list.
+//
+// Task #1: Fill return of `GroceryList` render method. It should return HTML list of 
+//          `GroceryListItem`. We already prepared variable containing list of items for you.
+
 class GroceryList extends React.Component {
   constructor(props) {
     super(props);
