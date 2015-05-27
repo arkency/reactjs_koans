@@ -10,6 +10,9 @@ var React = require("react");
 //
 // Task #1: Fill return of `GroceryList` render method. It should return HTML list of 
 //          `GroceryListItem`. We already prepared variable containing list of items for you.
+// Task #2: Create definition of the 'addGroceryItem' method. It should modify current state and re-render component. After all you will see 
+//          new element on the list. We prepared two commponents for you. Please render the button and input under your list and define `onClick` handler for the button. 
+//          Do you remember how we used `onChange` event in third excersise?
 
 class GroceryList extends React.Component {
   constructor(props) {
@@ -17,25 +20,41 @@ class GroceryList extends React.Component {
     this.state = {
       groceries: [
         {
-          name: "Test"
-        } 
+          name: "Apples"
+        },
+        inputValue: "" 
       ]
     };
 
     this.addGroceryItem = this.addGroceryItem.bind(this);
     this.clearList = this.clearList.bind(this);
+    this.inputChanged = this.inputChanged.bind(this);
   }
 
-  addGroceryItem() {}
+  inputChanged(event) {
+    this.setState({inputValue: event.target.value});
+  }
+
+  // Hint 1: You can `concat` method to modify groceries list.
+  // Hint 2: Remember about empty values
+  addGroceryItem(event) {}
+
   clearList() {}
 
   render() {
     let groceriesComponents = [];
+    let newProductInput = null;
+    let newProductAddButton = null;
+    
     for(let grocery of this.state.groceries) {
       groceriesComponents.push(<GroceryListItem grocery={grocery} />);
     }
 
-    return (<span>FILL ME IN</span>);
+    newProductInput = <input type="text" name="item" onChange={this.inputChanged}/>;
+    // Something is missing here... What happen if you click this button now?
+    newProductAddButton = <button>'Add new Product'</button>;
+
+    return (<div></div>);
   } 
 }
 
