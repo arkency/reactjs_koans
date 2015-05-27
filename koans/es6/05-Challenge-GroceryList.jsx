@@ -41,6 +41,10 @@ class GroceryList extends React.Component {
 
   clearList() {}
 
+  // There are a few ways in which React components can be customised and one method is to use properties. We mentioned about this in proevious excersise.
+  // Properties are to React components what attributes are to HTML elements. This is a method to pass immutable 
+  // configuration to child components. As you can see here we have defined `grocery` property for each `GroceryListItem`. 
+
   render() {
     let groceriesComponents = [];
     let newProductInput = null;
