@@ -69,9 +69,9 @@ class GroceryList extends React.Component {
         {
           name: "Apples",
           selected: false
-        },
-        newGroceryName: "" 
-      ]
+        } 
+      ],
+      newGroceryName: ""
     };
 
     this.addGroceryItem = this.addGroceryItem.bind(this);
