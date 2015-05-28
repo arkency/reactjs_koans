@@ -69,41 +69,52 @@ class GroceryList extends React.Component {
     this.inputChanged = this.inputChanged.bind(this);
   }
 
-  // Warning: Do not try to change the `inputChanged` method structure.
+  // Warning: You shouldn't change this method.
   inputChanged(event) {
     this.setState({newGroceryName: event.target.value});
   }
 
-  // Fill definition of the following method to allow adding new items to the list
-  // Hint 1: You can try use the `concat` method to modify groceries list.
-  // Hint 2: Remember about case where input is empty
+  // Fill the definition of the following method to allow adding new items to the list
+  // Hint #1: You can try use the `concat` method to modify groceries list.
+  // Hint #2: Remember about case where input is empty. 
   addGroceryItem() {}
 
-  // Fill definition of the following method to allow clearing the list
+  // Fill the definition of the following method to allow clearing the list
+  // Hint: You can just simply set the groceries to an empty array.
   clearList() {}
 
-  // Fill definition of the following method to allow adding making complete each item
-  // Hint 1: Remember about index value
+  // Fill the definition of the following method to allow adding making complete each item
+  // Hint 1: Pay attention to the element's index on the list.
   toggleGroceryCompleteness() {}
 
-  // Properties are a way to pass parameters to your React components. We mentioned about this in proevious excersise.
-  // Properties are to React components what attributes are to HTML elements. This is a method to pass a configuration to child components. As you can see here we have defined `grocery` property for each `GroceryListItem`. 
-
   render() {
-    //As you can see we prepared all view elements for you. Please add necesary handlers and render all elements.
+    // As you can see we prepared all view elements for you. Please add necesary handlers and 
+    // render all elements.
     let groceriesComponents = [],
         newProductInput,
         newProductAddButton,
         clearListButton;
     
+
+    // Properties are a way to pass parameters to your React components. We mentioned this in the
+    // third exercise. Properties are to React components what attributes are to HTML elements. 
+    // This is a method to pass a configuration to child components. As you can see here we have 
+    // defined `grocery` property for each `GroceryListItem`. 
     for(var index = 0; index < this.state.groceries.length; index++) {
-      groceriesComponents.push(<GroceryListItem grocery={this.state.groceries[index]} onComplete={this.toggleGroceryCompleteness.bind(this, index)}/>);
+      groceriesComponents.push(
+          <GroceryListItem 
+            grocery={this.state.groceries[index]} 
+            onComplete={this.toggleGroceryCompleteness.bind(this, index)}
+          />
+      );
     }
 
     // Here are components for task #2.
     newProductInput = <input className='new-item' type="text" onChange={this.inputChanged}/>;
     // Something is missing here... What will happen if you click these buttons now?
     newProductAddButton = <button className='add-product'>'Add new Product'</button>;
+
+    // You will need this component to finish task #3
     clearListButton = <button className='clear-list'>'Clear the List'</button>;
 
     return (
