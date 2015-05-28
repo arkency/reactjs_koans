@@ -8,15 +8,36 @@ var React = require("react");
 
 // This exercise would be a bit bigger than previous exercises. We would make reactive grocery list.
 //
-// Task #1: Fill return of `GroceryList` render method. It should return HTML list of 
-//          `GroceryListItem`. We already prepared variable containing list of items for you.
-// Task #2: Now something exciting. You have to implement adding items to list. Create definition of the 'addGroceryItem' method. This method should modify current state and re-render component. 
-//          After all you will be able to add a new element on the list. We prepared two components for you. Please render the button and input under your list and define the `onClick` handler for the button.
+// Task #1: Fill the `return` of `GroceryList` render method. It should return HTML list of 
+//          `GroceryListItem`. We already prepared variable containing list of these items for you.
+//
+// Task #2: You have to implement adding items to list. Create the implementation 
+//          of the `addGroceryItem` method. This method should modify `GroceryList` component's 
+//          state and by that re-render this component. 
+//
+//          After that, you need to render input and button in `GroceryList` (after the groceries 
+//          list). Users will use them as an input for new groceries. We prepared two components 
+//          for you. Please render the button and input under your list and define the `onClick` 
+//          handler for the button.
+//          Hint: See `render` method body. Look for `newProductInput` and `newProductAddButton`
+//                variables
+//
 //          Do you remember how we used `onChange` event in third exercise?
-// Task #3: Allow clearing list of items. Render a proper button under your list and implement a definition of the `clearList` method. This method should clear `groceries` array placed in your state. 
-//          This is similar to previous task so I don't want to say nothing more. Have fun.
-// Tesk #4: Ok now the last excersise. You have to implement toggling completness of the each grocery list's item. You have to make each item reactive. 
-//          This is why we prepared declaration of the `toggleGroceryCompleteness` method in the `GroceryList` component. Take the example of previous exercises :)
+//
+// Task #3: User would need to clear whole grocery list in one click. Render a proper button under 
+//          your list and implement the `clearList` method. This method should clear `groceries` 
+//          array placed in your state. This is similar to previous task so I don't want to say 
+//          nothing more. 
+//          Have fun.
+//
+//          Caution: Remember that you should change state only using `setState` method. The only
+//                   exception of that rule is state definition in component's class constructor.
+//
+// Tesk #4: Ok now the last excersise. You have to implement toggling completness of the each 
+//          grocery list's item. You have to make each item reactive. 
+//
+//          This is why we prepared declaration of the `toggleGroceryCompleteness` method in the 
+//          `GroceryList` component. Take the example of previous exercises :)
 
 class GroceryList extends React.Component {
   constructor(props) {
@@ -58,15 +79,16 @@ class GroceryList extends React.Component {
 
   render() {
     //As you can see we prepared all view elements for you. Please add necesary handlers and render all elements.
-    let groceriesComponents = [];
-    let newProductInput = null;
-    let newProductAddButton = null;
-    let clearListButton = null;
+    let groceriesComponents = [],
+        newProductInput,
+        newProductAddButton,
+        clearListButton;
     
     for(var index = 0; index < this.state.groceries.length; index++) {
       groceriesComponents.push(<GroceryListItem grocery={this.state.groceries[index]} onComplete={this.toggleGroceryCompleteness.bind(this, index)}/>);
     }
 
+    // Here are components for task #2.
     newProductInput = <input className='new-item' type="text" onChange={this.inputChanged}/>;
     // Something is missing here... What will happen if you click these buttons now?
     newProductAddButton = <button className='add-product'>'Add new Product'</button>;
