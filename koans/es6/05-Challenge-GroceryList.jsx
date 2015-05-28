@@ -39,6 +39,8 @@ var React = require("react");
 //          This is why we prepared declaration of the `toggleGroceryCompleteness` method in the 
 //          `GroceryList` component. Take the example of previous exercises :)
 //
+// === Tasks below aren't required for proceeding in Koans, but we encourage you to try ===
+//
 // Extra Task: As you can see in `GroceryList` component - it has more than one responsiblity. It 
 //             displays groceries list, handles state modification and handles the display and logic
 //             of new grocery addition. The last of these responsibilities can be easily extracted
@@ -50,6 +52,14 @@ var React = require("react");
 //        
 //             Warning: This task doesn't have its own tests, but current ones should be enough to 
 //                      cover it. The behaviour of whole app should not change.
+//
+// Extra Task: You can try to disable submit button for `newGrocery` if `newGroceryName` state is
+//             empty. You can just use property `disabled` for submit button component in `render`
+//             method.
+//
+//             Hint: There are no tests for this extra task. You need to do them yourself. You can
+//                   perform manual-testing (meh.) or try to create your own tests. Check out
+//                   `test/es6/05-Challange-GroceryList.js` for tests to this part.
 
 class GroceryList extends React.Component {
   constructor(props) {
