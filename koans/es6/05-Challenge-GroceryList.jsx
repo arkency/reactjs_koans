@@ -16,7 +16,7 @@ var React = require("react");
 // Task #3: Allow clearing list of items. Render a proper button under your list and implement a definition of the `clearList` method. This method should clear `groceries` array placed in your state. 
 //          This is similar to previous task so I don't want to say nothing more. Have fun.
 // Tesk #4: Ok now the last excersise. You have to implement toggling completness of the each grocery list's item. You have to make each item reactive. 
-//          This is why we prepared declaration of the `toggleGroceryCompleteness` method in the `GroceryListItem` component. Take the example of previous exercises :)
+//          This is why we prepared declaration of the `toggleGroceryCompleteness` method in the `GroceryList` component. Take the example of previous exercises :)
 
 class GroceryList extends React.Component {
   constructor(props) {
