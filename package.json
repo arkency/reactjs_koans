@@ -4,6 +4,7 @@
   "description": "React.js Koans",
   "main": "index.js",
   "scripts": {
+    "setup": "scripts/setup.sh",
     "test-es6": "jsx -x jsx --es6module exercises/es6 src/es6 >/dev/null && mocha -b --compilers js:mocha-traceur -r test/es6/tests-helper.js test/es6/**/*.js ; true"
   },
   "repository": {
