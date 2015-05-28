@@ -38,6 +38,18 @@ var React = require("react");
 //
 //          This is why we prepared declaration of the `toggleGroceryCompleteness` method in the 
 //          `GroceryList` component. Take the example of previous exercises :)
+//
+// Extra Task: As you can see in `GroceryList` component - it has more than one responsiblity. It 
+//             displays groceries list, handles state modification and handles the display and logic
+//             of new grocery addition. The last of these responsibilities can be easily extracted
+//             to another component. The new component should handle only text input and submit
+//             button.
+//
+//             Hint: You can pass callback to the component's method (like `addGroceryItem`) as an
+//                   attribute in `render` method.
+//        
+//             Warning: This task doesn't have its own tests, but current ones should be enough to 
+//                      cover it. The behaviour of whole app should not change.
 
 class GroceryList extends React.Component {
   constructor(props) {
