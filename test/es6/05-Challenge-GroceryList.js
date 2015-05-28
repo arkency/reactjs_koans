@@ -6,15 +6,11 @@ import _           from 'lodash';
 
 describe("05 - Challenge - Grocery List", () => {
   var component;
-  var input;
-  var button;
 
   beforeEach( () => {
     var elem = document.createElement('div');
     elem = document.body.appendChild(elem);
     component = React.render(React.createElement(GroceryList), elem);
-    input = React.addons.TestUtils.findRenderedDOMComponentWithTag(component, "input");
-    button = React.addons.TestUtils.findRenderedDOMComponentWithTag(component, "button");
   });
 
   afterEach( () => {
@@ -33,15 +29,21 @@ describe("05 - Challenge - Grocery List", () => {
 
   describe("Task #2 - add a new product to list", () => {
     it('Should render required tags', () => {
-      let productsNameInput = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "input");
-      let productsAddButton = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "button");
-      assert.equal(productsNameInput.length, 1, "GroceriesList should render HTML input");
-      assert.equal(productsAddButton.length, 1, "GroceriesList should render HTML 'add product' button"); 
+      try { React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "new-item");}
+      catch(err){
+        throw new Error("I can't find new item input");
+      }
+      try { React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "add-product");}
+      catch(err){
+        throw new Error("I can't find 'Add new Product' button");
+      }
     });
 
     it('Should be possible to add a new product to list', () => {
-      React.addons.TestUtils.Simulate.change(input.getDOMNode(), { target: {value: 'Oranges' }});
-      React.addons.TestUtils.Simulate.click(button.getDOMNode());
+      let newProductInput = React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "new-item");
+      let newProductAddButton = React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "add-product");
+      React.addons.TestUtils.Simulate.change(newProductInput.getDOMNode(), { target: {value: 'Oranges' }});
+      React.addons.TestUtils.Simulate.click(newProductAddButton.getDOMNode());
       let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
       let groceryItem = _.last(groceryListItems);
       
@@ -50,11 +52,30 @@ describe("05 - Challenge - Grocery List", () => {
     });
 
     it('Should not be possible to add empty element', () => {
-      React.addons.TestUtils.Simulate.click(button.getDOMNode());
+      let newProductAddButton = React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "add-product");
+      React.addons.TestUtils.Simulate.click(newProductAddButton.getDOMNode());
       let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
       let groceryItem = _.last(groceryListItems);
       
       assert.equal(groceryListItems.length, 1, "There should be exactly one element on the groceries list");  
+    });
+  });
+
+  describe("Task #3 - clearing groceries list", () => {
+    it('Should render required tags', () => {
+      try { React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "clear-list");}
+      catch(err){
+        throw new Error("I can't find 'Clear the List' button");
+      }
+    });
+
+    it('Should be possible to remove all list items', () => {
+      let clearListButton = React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "clear-list");
+      React.addons.TestUtils.Simulate.click(clearListButton.getDOMNode());
+      let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
+      let groceryItem = _.last(groceryListItems);
+      
+      assert.equal(groceryListItems.length, 0, "There should be exactly zero elements on the groceries list");
     });
   });
 });
