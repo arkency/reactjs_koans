@@ -7,7 +7,7 @@ import _             from 'lodash';
 describe("03 - What's Your Name?", () => {
   var component;
   var paragraphs;
-  var inputs; 
+  var inputs;
 
   var nameInParagraphEqualsTo = (paragraph, name) => {
     var children = paragraph.props.children;
@@ -49,9 +49,8 @@ describe("03 - What's Your Name?", () => {
         var input     = _.first(inputs);
         var paragraph = _.first(paragraphs);
 
-
         React.addons.TestUtils.Simulate.change(input, {target: { value: "" } });
-        assert.equal(paragraph.props.children, "Hey there. Enter your name.", "If user didn't enter the name, show \"Hey There. Enter your name\". See the hint in task's description. The code you need to write is almost the same.");
+        assert.equal(paragraph.props.children, "Hey there. Enter your name.", "If user didn't enter the name, show \"Hey there. Enter your name.\". See the hint in task's description. The code you need to write is almost the same.");
 
         React.addons.TestUtils.Simulate.change(input, {target: { value: "XYZ" } });
         assert.equal(nameInParagraphEqualsTo(paragraph, 'XYZ'), true, "When user input name, you should show greeting message in paragraph.");
