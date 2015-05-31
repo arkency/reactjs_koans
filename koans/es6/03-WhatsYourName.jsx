@@ -10,7 +10,8 @@ var React = require("react");
 //                re-calculate `render` method and update HTML to look exactly
 //                like specified in class.
 //
-// You can pass properties to components using JSX attributes (you did it in the last exercise!). e.g.
+// You can pass properties to components using JSX attributes. You did it in
+// the last exercise! See the example below.
 //
 // ```
 // <div className="example-class" attr1="ugabuga">[...]</div>
@@ -20,17 +21,17 @@ var React = require("react");
 // `{className: "example-class", attr1: "ugabuga"}`
 //
 // You have two tasks to complete in this exercise:
-// TASK #1: Someone left broken `onNameChange` method. It is always triggered
-//          after changing the value of `username` input (it is `onChange` callback).
-//          This method takes event as its only argument. You need to retrieve
-//          input value from that object and update the `name` field in `state` object.
+// Task #1: Someone left broken `onNameChange` method. It is always triggered
+//          after changing the value of `username` input. This method takes
+//          event as its only argument. You need to retrieve input value from
+//          that object and update the `name` field in `state` object.
 // Warning: Do not try to change the `render` structure.
 //
-// TASK #2: If there is no name given, we should display message encouraging
+// Task #2: If there is no name given, we should display message encouraging
 //          user to insert his name.
 //          Display text: "Hey there. Enter your name." if name length is 0.
 //
-//          HINT: Use temporary variables to achieve the goal. E.g.
+//          Hint: Use temporary variables to achieve the goal. See the example below.
 //          ```
 //          render() {
 //            var numberToDisplay;
@@ -56,8 +57,8 @@ class WhatsYourName extends React.Component {
   //                 What else could you do here?
 
   constructor(props) {
-    // Properties object is called `props`. You can access it with `this.props`. We won't use them
-    // in this exercise.
+    // Properties object is called `props`. You can access it with `this.props`.
+    // We won't use them in this exercise.
     super(props);
     this.state = { name: "" };
 
@@ -65,13 +66,14 @@ class WhatsYourName extends React.Component {
     this.onNameChange = this.onNameChange.bind(this);
   }
 
-  // `event` is the only argument passed to that method. It will be an event object thrown by React
-  // on events like `click`, `change` etc.
+  // `event` is the only argument passed to that method. It will be an event
+  // object thrown by React on actions like `click`, `change` etc.
   //
-  // You need to correct the call of `setState` method. Just try to set `username` field to the value
-  // passed in event.
+  // You need to correct the call of `setState` method. Just try to set
+  // `username` field to the value passed in event.
   //
-  // Hint: use `console.log` and check `event.target` key to see the content of `input`.
+  // Hint: use `console.log` to check `event.target`. You will find there text
+  //       entered to the input.
   onNameChange(event) {
     // Huh... There's something wrong here...
     this.setState({bad_attribute: "ChangeME!"});

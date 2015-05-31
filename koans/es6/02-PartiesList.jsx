@@ -8,7 +8,7 @@ var React = require("react");
 
 class PartiesList extends React.Component {
   // We can nest DOM elements delivered by React just like HTML elements.
-  // See how this list looks like. Doesn't it look similar?
+  // Doesn't this list look familiar to you?
   render() {
     return (
       <ul className="FILL ME">
