@@ -19,4 +19,4 @@ var Name = React.createClass({
 
 // Hint: You have to use `React.render()` method. This method takes two params `ReactElement' and DOM node.
 
-export function renderName() {}
+export default function renderName() {}
