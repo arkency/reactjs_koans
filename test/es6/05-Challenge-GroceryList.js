@@ -28,7 +28,7 @@ describe("05 - Challenge - Grocery List", () => {
   });
 
   describe("Task #2 - add a new product to list", () => {
-    it('Should render required tags', () => {
+    it('Should render required tags like additional button and input', () => {
       try { React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "new-item");}
       catch(err){
         throw new Error("I can't find new item input");

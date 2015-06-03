@@ -90,7 +90,7 @@ class GroceryList extends React.Component {
     this.inputChanged = this.inputChanged.bind(this);
   }
 
-  // Warning: You shouldn't change this method.
+  // Warning: You shouldn't change this method except working with extra tasks.
   inputChanged(event) {
     this.setState({newGroceryName: event.target.value});
   }
@@ -106,7 +106,7 @@ class GroceryList extends React.Component {
 
   // Fill the definition of the following method to allow adding making complete each item
   // Hint 1: Pay attention to the element's index on the list.
-  toggleGroceryCompleteness() {}
+  toggleGroceryCompleteness(grocery_index) {}
 
   render() {
     // As you can see we prepared all view elements for you. Please add necesary handlers and
