@@ -7,9 +7,9 @@ var React = require('react');
 // Task #1: Fill the `renderName` method. It should render ReactElement
 //          into the DOM.
 class Name extends React.Component {
-  render: function() {
+  render() {
     return (
-      <p>'My name is koan'</p>
+      <p>My name is koan</p>
     );
   }
 }
