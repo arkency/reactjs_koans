@@ -11,6 +11,12 @@ You would need to complete given tasks. Prepared test would check if they were d
   1. Clone repository.
   2. npm run setup
 
+## Start local server:
+
+  1. npm run start
+
+Visit http://localhost:8080/ to view the app.
+
 ## Instructions:
 
   1. You should fill code in `exercises` directory and run tests to see if you did everything right.
