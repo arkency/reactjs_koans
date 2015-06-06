@@ -9,7 +9,7 @@ You would need to complete given tasks. Prepared test would check if they were d
 ## Installation:
 
   1. Clone repository.
-  2. npm run setup
+  2. `npm run setup`
 
 ## Start local server:
 
@@ -21,5 +21,5 @@ Visit http://localhost:8080/ to view the app.
 
   1. You should fill code in `exercises` directory and run tests to see if you did everything right.
   2. You must do exercises in given order.
-  3. Try to not peak the tests files! It contains spoilers.
+  3. Try to not peak tests files! They contain spoilers.
   4. To run tests, use `npm run test-es6`
