@@ -137,7 +137,7 @@ class GroceryList extends React.Component {
     // Something is missing here... What will happen if you click these buttons now?
     newProductAddButton = <button className='add-product'>'Add new Product'</button>;
 
-    // You will need this component to finish task #3
+    // Something is missing here... You will need this component to finish task #3
     clearListButton = <button className='clear-list'>'Clear the List'</button>;
 
     return (
