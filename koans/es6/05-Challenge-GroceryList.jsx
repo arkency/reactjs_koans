@@ -135,10 +135,10 @@ class GroceryList extends React.Component {
     newProductInput = <input className='new-item' type="text" onChange={this.inputChanged}/>;
 
     // Something is missing here... What will happen if you click these buttons now?
-    newProductAddButton = <button className='add-product'>'Add new Product'</button>;
+    newProductAddButton = <button className='add-product'>Add new Product</button>;
 
     // Something is missing here... You will need this component to finish task #3
-    clearListButton = <button className='clear-list'>'Clear the List'</button>;
+    clearListButton = <button className='clear-list'>Clear the List</button>;
 
     return (
       <div>
