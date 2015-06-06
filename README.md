@@ -13,7 +13,7 @@ You would need to complete given tasks. Prepared test would check if they were d
 
 ## Start local server:
 
-  1. npm run start
+  1. `npm run start`
 
 Visit http://localhost:8080/ to view the app.
 
