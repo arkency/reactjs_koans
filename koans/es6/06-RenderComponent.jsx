@@ -28,4 +28,4 @@ class Name extends React.Component {
 //
 //        `let element = React.createElement(Name);`
 
-export default function renderName() {}
+export default function renderName(position) {}

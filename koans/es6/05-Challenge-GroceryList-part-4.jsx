@@ -104,7 +104,9 @@ class GroceryList extends React.Component {
 
     return (
       <div>
+      <ul>
         {groceriesComponents}
+      </ul>
         {newProductInput}
         {newProductAddButton}
         {clearListButton}
