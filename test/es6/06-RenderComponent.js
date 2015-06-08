@@ -7,7 +7,7 @@ import _          from 'lodash';
 describe("06 - RenderComponent", () => {
 
   beforeEach( () => {
-    renderName();
+    renderName(document.body);
   });
 
   describe("Task #1 - render Name component", () => {
