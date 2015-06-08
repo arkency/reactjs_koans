@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(elements.css);
+@import url(tabs.css);
+
+body, html {
+    height: 100%;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    background: white;
+    text-align: center;
+    font-family: helvetica;
+  }
