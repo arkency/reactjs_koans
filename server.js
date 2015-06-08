@@ -12,9 +12,7 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/build/index.html');
 });
 
-app.get('/style.css', function (req, res) {
-  res.sendFile(__dirname + '/build/style.css');
-});
+app.use(express.static(__dirname + '/build/stylesheets'));
 
 new WebpackDevServer(webpack(config), {
     publicPath: config.output.publicPath,
