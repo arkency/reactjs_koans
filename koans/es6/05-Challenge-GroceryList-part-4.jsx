@@ -1,45 +1,9 @@
-/**
-  * ATTENTION!
-  * This exercise is under construction. Some tasks may be finished and working,
-  * but don't expect it working fully until this comment disappears!
-  **/
-
 var React = require("react");
 
 // This exercise is a bit bigger than the previous ones.
 // We would make reactive grocery list.
 //
-// Task #1: Fill the `return` of `GroceryList` render method. It should return
-//          HTML list of `GroceryListItem`. We already prepared variable
-//          containing list of these items for you.
-//
-// Task #2: You have to implement adding items to list. Create the implementation
-//          of the `addGroceryItem` method. This method should modify `GroceryList`
-//          component's state and by that re-render this component.
-//
-//          After that, you need to render input and button in `GroceryList`
-//          (after the groceries list). Users will use them as an input for
-//          new groceries.
-//
-//          We prepared two components for you. Please render the button and
-//          input under your list and define the `onClick` handler for the button.
-//
-//          Hint: See `render` method body. Look for `newProductInput` and
-//                `newProductAddButton` variables
-//
-//          Do you remember how we used `onChange` event in third exercise?
-//
-// Task #3: User would need to clear whole grocery list in one click.
-//          Render a proper button under your list and implement the `clearList` method.
-//          This method should clear `groceries` array placed in your state.
-//          This is similar to previous task so I don't want to say nothing more.
-//          Have fun.
-//
-//          Caution: Remember that you should change state only using `setState`
-//                   method. The only exception of that rule is state definition
-//                   in component's class constructor.
-//
-// Task #4: Ok now the last excersise. You have to implement toggling
+// Task: Ok now the last excersise. You have to implement toggling
 //          completeness of the each grocery list's item. Make each item reactive.
 //
 //          This is why we prepared declaration of the `toggleGroceryCompleteness`
@@ -95,14 +59,15 @@ class GroceryList extends React.Component {
     this.setState({newGroceryName: event.target.value});
   }
 
-  // Fill the definition of the following method to allow adding new items to the list
-  // Hint #1: You can try use the `concat` method to modify groceries list.
-  // Hint #2: Remember about case where input is empty.
-  addGroceryItem() {}
+  addGroceryItem() {
+    if(this.state.newGroceryName != "") {
+      this.setState({groceries: this.state.groceries.concat([{name: this.state.newGroceryName}]), inputDisabled: true});
+    }
+  }
 
-  // Fill the definition of the following method to allow clearing the list
-  // Hint: You can just simply set the groceries to an empty array.
-  clearList() {}
+  clearList(event) {
+    this.setState({groceries: []});
+  }
 
   // Fill the definition of the following method to allow adding making complete each item
   // Hint 1: Pay attention to the element's index on the list.
@@ -131,17 +96,18 @@ class GroceryList extends React.Component {
       );
     }
 
-    // Here are components for task #2.
     newProductInput = <input className='new-item' type="text" onChange={this.inputChanged}/>;
 
-    // Something is missing here... What will happen if you click these buttons now?
-    newProductAddButton = <button className='add-product'>Add new Product</button>;
+    newProductAddButton = <button className='add-product' onClick={this.addGroceryItem}>Add new Product</button>;
 
-    // Something is missing here... You will need this component to finish task #3
-    clearListButton = <button className='clear-list'>Clear the List</button>;
+    clearListButton = <button className='clear-list' onClick={this.clearList}>Clear the List</button>;
 
     return (
       <div>
+        {groceriesComponents}
+        {newProductInput}
+        {newProductAddButton}
+        {clearListButton}
       </div>
     );
   }

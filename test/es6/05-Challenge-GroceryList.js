@@ -1,23 +1,23 @@
-import assert      from 'assert';
-import GroceryList from '../../src/es6/05-Challenge-GroceryList.js';
-import jsdom       from 'jsdom';
-import React       from 'react/addons';
-import _           from 'lodash';
+import assert           from 'assert';
+import GroceryListPart1 from '../../src/es6/05-Challenge-GroceryList-part-1.js';
+import GroceryListPart2 from '../../src/es6/05-Challenge-GroceryList-part-2.js';
+import GroceryListPart3 from '../../src/es6/05-Challenge-GroceryList-part-3.js';
+import GroceryListPart4 from '../../src/es6/05-Challenge-GroceryList-part-4.js';
+import jsdom            from 'jsdom';
+import React            from 'react/addons';
+import _                from 'lodash';
 
 describe("05 - Challenge - Grocery List", () => {
   var component;
 
-  beforeEach( () => {
-    var elem = document.createElement('div');
-    elem = document.body.appendChild(elem);
-    component = React.render(React.createElement(GroceryList), elem);
-  });
-
-  afterEach( () => {
-    React.unmountComponentAtNode(React.findDOMNode(component));
-  });
-
   describe("Task #1 - display a list of groceries", () => {
+    
+    beforeEach( () => {
+      var elem = document.createElement('div');
+      elem = document.body.appendChild(elem);
+      component = React.render(React.createElement(GroceryListPart1), elem);
+    });
+    
     it('There should be an unordered list of groceries', () => {
       let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
       assert.equal(groceryListItems.length, 1, "There should be exactly one element on the groceries list");
@@ -28,6 +28,13 @@ describe("05 - Challenge - Grocery List", () => {
   });
 
   describe("Task #2 - add a new product to list", () => {
+
+    beforeEach( () => {
+      var elem = document.createElement('div');
+      elem = document.body.appendChild(elem);
+      component = React.render(React.createElement(GroceryListPart2), elem);
+    });
+
     it('Should render required tags like additional button and input', () => {
       try { React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "new-item");}
       catch(err){
@@ -63,6 +70,13 @@ describe("05 - Challenge - Grocery List", () => {
   });
 
   describe("Task #3 - clearing groceries list", () => {
+
+    beforeEach( () => {
+      var elem = document.createElement('div');
+      elem = document.body.appendChild(elem);
+      component = React.render(React.createElement(GroceryListPart3), elem);
+    });
+
     it('Should render required tags', () => {
       try { React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "clear-list");}
       catch(err){
@@ -80,6 +94,13 @@ describe("05 - Challenge - Grocery List", () => {
   });
 
   describe("Task #4 - collecting groceries items", () => {
+
+    beforeEach( () => {
+      var elem = document.createElement('div');
+      elem = document.body.appendChild(elem);
+      component = React.render(React.createElement(GroceryListPart4), elem);
+    });
+    
     it('Should be possible to make the grocery item complete', () => {
       let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
       let groceryItem = _.last(groceryListItems);
