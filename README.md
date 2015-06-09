@@ -11,6 +11,13 @@ You would need to complete given tasks. Prepared test would check if they were d
   1. `git clone git@github.com:arkency/reactjs_koans.git`
   2. `npm run setup`
 
+## Koans structure
+
+ * You need to edit files only in **`exercises`** directory
+ * `koans` directory contains sources of all exercises. `test` is for tests.
+ * `src` is a contains files compiled from `exercises`
+ * `build` contains sources launched in web browser version of Koans.
+ 
 ## Start local server:
 
   1. `npm run start`
