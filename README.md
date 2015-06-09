@@ -18,7 +18,7 @@ You would need to complete given tasks. Prepared test would check if they were d
  * `src` is a contains files compiled from `exercises`
  * `build` contains sources launched in web browser version of Koans.
  
-## Start local server (optional)
+## Start local web server (optional)
 
 You can run webserver and see your changes live in your web browser:
 
