@@ -1,8 +1,4 @@
-import assert        from 'assert';
 import WhatsYourName from '../../src/es6/03-WhatsYourName.js';
-import jsdom         from 'jsdom';
-import React         from 'react/addons';
-import _             from 'lodash';
 
 describe("03 - What's Your Name?", () => {
   var component;

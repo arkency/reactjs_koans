@@ -1,8 +1,4 @@
-import assert     from 'assert';
 import renderName from '../../src/es6/06-RenderComponent.js';
-import jsdom      from 'jsdom';
-import React      from 'react/addons';
-import _          from 'lodash';
 
 describe("06 - RenderComponent", () => {
 

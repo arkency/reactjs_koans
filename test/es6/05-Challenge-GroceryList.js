@@ -1,29 +1,25 @@
-import assert           from 'assert';
 import GroceryListPart1 from '../../src/es6/05-Challenge-GroceryList-part-1.js';
 import GroceryListPart2 from '../../src/es6/05-Challenge-GroceryList-part-2.js';
 import GroceryListPart3 from '../../src/es6/05-Challenge-GroceryList-part-3.js';
 import GroceryListPart4 from '../../src/es6/05-Challenge-GroceryList-part-4.js';
-import jsdom            from 'jsdom';
-import React            from 'react/addons';
-import _                from 'lodash';
 
 describe("05 - Challenge - Grocery List", () => {
   var component;
 
   describe("Task #1 - display a list of groceries", () => {
-    
+
     beforeEach( () => {
       var elem = document.createElement('div');
       elem = document.body.appendChild(elem);
       component = React.render(React.createElement(GroceryListPart1), elem);
     });
-    
+
     it('There should be an unordered list of groceries', () => {
       let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
       assert.equal(groceryListItems.length, 1, "There should be exactly one element on the groceries list");
-      
+
       let groceryItem = _.first(groceryListItems);
-      assert.equal(groceryItem.props.children, "Apples", "GroceriesListItem should display a grocery name"); 
+      assert.equal(groceryItem.props.children, "Apples", "GroceriesListItem should display a grocery name");
     });
   });
 
@@ -51,12 +47,12 @@ describe("05 - Challenge - Grocery List", () => {
       let newProductAddButton = React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "add-product");
       React.addons.TestUtils.Simulate.change(newProductInput.getDOMNode(), { target: {value: 'Oranges' }});
       React.addons.TestUtils.Simulate.click(newProductAddButton.getDOMNode());
-      
+
       let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
       assert.equal(groceryListItems.length, 2, "There should be exactly two elements on the groceries list");
-      
+
       let groceryItem = _.last(groceryListItems);
-      assert.equal(groceryItem.props.children, "Oranges", "GroceriesListItem should display a grocery name");  
+      assert.equal(groceryItem.props.children, "Oranges", "GroceriesListItem should display a grocery name");
       assert.equal(groceryItem.props.className, "", "GroceriesListItem should not be selected by default");
     });
 
@@ -64,8 +60,8 @@ describe("05 - Challenge - Grocery List", () => {
       let newProductAddButton = React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "add-product");
       React.addons.TestUtils.Simulate.click(newProductAddButton.getDOMNode());
       let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
-      
-      assert.equal(groceryListItems.length, 1, "There should be exactly one element on the groceries list");  
+
+      assert.equal(groceryListItems.length, 1, "There should be exactly one element on the groceries list");
     });
   });
 
@@ -88,7 +84,7 @@ describe("05 - Challenge - Grocery List", () => {
       let clearListButton = React.addons.TestUtils.findRenderedDOMComponentWithClass(component, "clear-list");
       React.addons.TestUtils.Simulate.click(clearListButton.getDOMNode());
       let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
-      
+
       assert.equal(groceryListItems.length, 0, "There should be exactly zero elements on the groceries list");
     });
   });
@@ -100,15 +96,15 @@ describe("05 - Challenge - Grocery List", () => {
       elem = document.body.appendChild(elem);
       component = React.render(React.createElement(GroceryListPart4), elem);
     });
-    
+
     it('Should be possible to make the grocery item complete', () => {
       let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
       let groceryItem = _.last(groceryListItems);
       React.addons.TestUtils.Simulate.click(groceryItem.getDOMNode());
-      
+
       groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
       assert.equal(groceryListItems.length, 1, "There should be exactly one element on the groceries list");
-      
+
       groceryItem = _.last(groceryListItems);
       assert.equal(groceryItem.props.className, "selected", "GroceriesListItem should be selected");
     });

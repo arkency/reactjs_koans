@@ -1,7 +1,4 @@
-import assert      from 'assert';
 import PartiesList from '../../src/es6/02-PartiesList.js';
-import jsdom       from 'jsdom';
-import React       from 'react/addons';
 
 describe("02 - Parties List", () => {
   var component;
@@ -22,7 +19,7 @@ describe("02 - Parties List", () => {
       assert.equal(lists.length, 1, "You must render exactly one `ul` list");
 
       var list = lists[0];
-      var parties = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(list, 'li');  
+      var parties = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(list, 'li');
 
       assert.equal(parties.length > 1, true, "You have only one party on list. :(");
     });

@@ -1,7 +1,4 @@
-import assert     from 'assert';
 import HelloWorld from '../../src/es6/01-HelloWorld.js';
-import jsdom      from 'jsdom';
-import React      from 'react/addons';
 
 describe("01 - HelloWorld", () => {
   var component;

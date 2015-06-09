@@ -1,4 +1,3 @@
-import assert  from 'assert';
 import Answers from '../../src/es6/04-Quiz.js';
 
 describe("04 - Quiz", () => {
