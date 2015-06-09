@@ -18,11 +18,12 @@ You would need to complete given tasks. Prepared test would check if they were d
  * `src` is a contains files compiled from `exercises`
  * `build` contains sources launched in web browser version of Koans.
  
-## Start local server
+## Start local server (optional)
 
-  1. `npm run start`
+You can run webserver and see your changes live in your web browser:
 
-Visit http://localhost:8080/ to view the app.
+  1. Run command `npm run start`
+  2. Visit http://localhost:8080/
 
 ## Instructions
 
