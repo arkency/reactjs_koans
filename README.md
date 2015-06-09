@@ -6,7 +6,7 @@ to know is JavaScript (of course).
 
 You would need to complete given tasks. Prepared test would check if they were done correctly.
 
-## Installation:
+## Installation
 
   1. `git clone git@github.com:arkency/reactjs_koans.git`
   2. `npm run setup`
@@ -18,20 +18,20 @@ You would need to complete given tasks. Prepared test would check if they were d
  * `src` is a contains files compiled from `exercises`
  * `build` contains sources launched in web browser version of Koans.
  
-## Start local server:
+## Start local server
 
   1. `npm run start`
 
 Visit http://localhost:8080/ to view the app.
 
-## Instructions:
+## Instructions
 
   1. You should fill code in `exercises` directory and run tests to see if you did everything right.
   2. You must do exercises in given order.
   3. Try to not peak tests files! They contain spoilers.
   4. To run tests, use `npm run test-es6`
 
-## Additional resources:
+## Additional resources
 
   * [React docs](https://facebook.github.io/react/docs/getting-started.html) - it's a great source of in-depth information about React.
   * [Rails Meets React](http://blog.arkency.com/rails-react/) - book explaining how to use React.js for Ruby on Rails developers.
