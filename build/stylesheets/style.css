@@ -3,11 +3,11 @@
 @import url(tabs.css);
 
 body, html {
-    height: 100%;
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 100;
-    background: white;
-    text-align: center;
-    font-family: helvetica;
-  }
+  height: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 100;
+  background: white;
+  text-align: center;
+  font-family: helvetica;
+}
