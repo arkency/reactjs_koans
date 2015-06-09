@@ -7,10 +7,10 @@ describe("06 - RenderComponent", () => {
   });
 
   describe("Task #1 - render Name component", () => {
-    it('There should be rendered a <p> element with name', () => {
-      var element = document.getElementById('name');
-      assert.notEqual(element, null, "There should be only one paragraph");
-      assert.equal(element.innerHTML, "My name is koan", "The paragraph should contain 'My name is koan'");
+    it('There should be a rendered React component', () => {
+      var element = document.getElementById('hello');
+      assert.notEqual(element, null, "There should be a paragraph with id `hello` rendered on site.");
+      assert.equal(element.innerHTML, "Bazinga!", "Rendered paragraph should contain `Bazinga!`");
     });
   });
 });

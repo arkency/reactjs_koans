@@ -1,17 +1,21 @@
 var React = require('react');
 
-// Congratulations for completing your first React challange!M#
+// Congratulations for completing your first React challange!
 // You have already learnt how to create React's Components and how they affect
-// each other. This excercise will show you how to render components on website.
+// each other. This excercise will show you how to render components on the web page.
 //
-// Task #1: Fill the `renderName` method. It should render ReactElement
+// Task #1: Fill the `renderName` function. It should render ReactElement
 //          into the DOM.
 class Name extends React.Component {
   render() {
     return (
-      <p>My name is koan</p>
+      <p>Bazinga!</p>
     );
   }
+}
+
+function renderName(domNode) {
+
 }
 
 // Hint: You have to use `React.render(ReactElement element, DOMNode node)` method.
@@ -22,10 +26,10 @@ class Name extends React.Component {
 //        They are completely different methods!
 //
 //        Notice that class `Name` has type `React.Component`.
-//        It's a ReactComponent, not an ReactElement! You need to create an
+//        It's a ReactComponent, not a ReactElement! You need to create an
 //        element from component before putting it into DOM. One way of doing
 //        that is using `React.createElement(ReactComponent component)`. E.g.
 //
 //        `let element = React.createElement(Name);`
 
-export default function renderName(position) {}
+export default renderName;
