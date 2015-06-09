@@ -11,3 +11,7 @@ body, html {
   text-align: center;
   font-family: 'Open Sans', Helvetica, Arial sans-serif;
 }
+
+header {
+  margin-top: 40px;
+}

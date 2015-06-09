@@ -4,11 +4,10 @@
   left: -9999px;
 }
 .tabs {
-  width: 1050px;
-  float: none;
+  width: 80%;
   position: relative;
   padding: 0;
-  margin: 75px auto;
+  margin: 40px auto;
 }
 .exercise{
   float: left;
@@ -22,7 +21,7 @@
   color: white;
   font-size: 15px;
   font-weight: normal;
-  background: #2DB6CF;
+  background: #C41D47;
   cursor: pointer;
   position: relative;
   top: 3px;
@@ -53,8 +52,8 @@
   font-size: 20px;
   line-height: 140%;
   padding-top: 10px;
-  background: #2DB6CF;
-  padding: 15px;
+  background: #AB1C40;
+  padding: 12px;
   color: white;
   position: absolute;
   top: 53px;
