@@ -6,10 +6,11 @@ describe("04 - Quiz", () => {
   });
 
   it("Question #2", () => {
-    assert.equal(Answers.answer2, true, "JSX is not na HTML (so what is it?);
+    assert.equal(Answers.answer2, true, "JSX is not na HTML (so what is it?)");
+  });
 
   it("Question #3", () => {
-    assert.equal(Answers.answer3 === 'render', true, "In every component we created, there was one method. It "
+    assert.equal(Answers.answer3 === 'render', true, "In every component we created, there was one method. It contained JSX code.");
   });
 
   it("question #4", () => {
