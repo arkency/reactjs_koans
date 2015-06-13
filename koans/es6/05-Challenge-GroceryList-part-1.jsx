@@ -32,6 +32,7 @@ class GroceryList extends React.Component {
       );
     }
 
+    // Hint: Don't forget about putting items into `ul`
     return (
       <div>
         // Put your code here
