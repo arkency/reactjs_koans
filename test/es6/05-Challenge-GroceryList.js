@@ -105,7 +105,7 @@ describe("05 - Challenge - Grocery List", () => {
       assert.equal(groceryListItems.length, 1, "There should be exactly one element on the groceries list");
 
       groceryItem = _.last(groceryListItems);
-      assert.equal(groceryItem.props.className, "selected", "GroceriesListItem should be selected");
+      assert.equal(groceryItem.props.className, "completed", "GroceriesListItem should be completed");
     });
   });
 });

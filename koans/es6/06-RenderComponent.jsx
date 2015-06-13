@@ -8,7 +8,7 @@ var React = require('react');
 //          into the DOM.
 class Name extends React.Component {
   render() {
-    return (<p>Bazinga!</p>);
+    return (<p id="hello">Bazinga!</p>);
   }
 }
 

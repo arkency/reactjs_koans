@@ -115,7 +115,7 @@ class GroceryListItem extends React.Component {
   }
 
   render() {
-    let completed = this.props.grocery.completed;
+    let completed = this.props.grocery.completed ? "completed" : '';
     return (
       <li className={completed} onClick={this.props.onComplete}>
         {this.props.grocery.name}

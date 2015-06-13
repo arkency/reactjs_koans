@@ -9,6 +9,9 @@ var React = require("react");
 //       Caution: Remember that you should change state only using `setState`
 //                method. The only exception of that rule is state definition
 //                in component's class constructor.
+//
+//        Hint: Don't forget about adding clearing list button to list
+//              `GroceryList` rendering method.
 
 class GroceryList extends React.Component {
   constructor(props) {
