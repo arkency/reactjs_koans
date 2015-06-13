@@ -31,4 +31,4 @@ function renderNameComponent(domNode) {
 //
 //       `let element = React.createElement(Name);`
 
-export default renderName;
+export default renderNameComponent;

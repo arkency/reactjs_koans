@@ -1,9 +1,9 @@
-import renderName from '../../src/es6/06-RenderComponent.js';
+import renderNameComponent from '../../src/es6/06-RenderComponent.js';
 
 describe("06 - RenderComponent", () => {
 
   beforeEach( () => {
-    renderName(document.body);
+    renderNameComponent(document.body);
   });
 
   describe("Task #1 - render Name component", () => {
