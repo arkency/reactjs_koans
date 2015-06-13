@@ -81,8 +81,7 @@ class GroceryListItem extends React.Component {
   }
 
   render() {
-    let selected = (this.props.grocery.selected === true ? "selected" : "");
-    return (<li className={selected}>{this.props.grocery.name}</li>);
+    return (<li>{this.props.grocery.name}</li>);
   }
 }
 
