@@ -60,7 +60,6 @@ class GroceryList extends React.Component {
 
     newProductInput = <input className='new-item' type="text" onChange={this.inputChanged}/>;
     newProductAddButton = <button className='add-product' onClick={this.addGroceryItem}>Add new Product</button>;
-
     clearListButton = <button onClick={this.clearList} className='clear-list'>Clear the List</button>;
 
     return (
