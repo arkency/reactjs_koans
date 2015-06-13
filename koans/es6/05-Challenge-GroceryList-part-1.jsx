@@ -1,37 +1,29 @@
 var React = require("react");
 
 // This exercise is a bit bigger than the previous ones.
-// We would make reactive grocery list.
+// We will make reactive grocery list.
 //
 // Task: Fill the `return` of `GroceryList` render method. It should return
-//          HTML list of `GroceryListItem`. We already prepared variable
-//          containing list of these items for you. Next thing is to display the
-//          grocery's name using `this.props` in `GroceryListItem`. 
+//       list of `GroceryListItem`. You need to display the groceries names
+//       using `this.props` in `GroceryListItem`. We already prepared variable
+//       `groceriesComponents` inside `render` method` containing list of these items for you.
 
 class GroceryList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      groceries: [
-        {
-          name: "Apples",
-          selected: false
-        }
-      ]
+      groceries: [ { name: "Apples" } ]
     };
   }
 
   render() {
-    // As you can see we prepared all view elements for you. Please add necesary handlers and
-    // render all elements.
     let groceriesComponents = [];
-
     // Properties are a way to pass parameters to your React components.
     // We mentioned this in the third exercise. Properties are to React
     // components what attributes are to HTML elements.
     //
-    // This is a method to pass a configuration to child components.
-    // As you can see here we have defined `grocery` property for each `GroceryListItem`.
+    // Below you can see how to pass properties to child components.
+    // We have defined `grocery` property for each `GroceryListItem`.
     for(var index = 0; index < this.state.groceries.length; index++) {
       groceriesComponents.push(
           <GroceryListItem
@@ -42,12 +34,13 @@ class GroceryList extends React.Component {
 
     return (
       <div>
+        // Put your code here
       </div>
     );
   }
 }
 
-// You have to use component's props to get grocery's name. 
+// Render grocery name from component's properties.
 // If you have problem check `this.props` in the console.
 class GroceryListItem extends React.Component {
   constructor(props) {
@@ -55,7 +48,11 @@ class GroceryListItem extends React.Component {
   }
 
   render() {
-    return (<li>FILL ME IN!</li>);
+    return (
+        <li>
+          // Put your code here.
+        </li>
+    );
   }
 }
 
