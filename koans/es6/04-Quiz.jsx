@@ -10,10 +10,10 @@ var Answers = {
   answer2: null, // true/false?
 
   // Question #3: What's the name of the method that must be defined in every component?
-  answer3: "toString",
+  answer3: "FILL ME IN",
 
-  // Question #4: If I want to set `div` component's HTML class,
-  //              what attribute should I declare in JSX?
+  // Question #4: If I want to set `div` component's HTML class, what attribute
+  //              should I declare in JSX?
   // Tip: See exercise #2.
   answer4: "class",
 
