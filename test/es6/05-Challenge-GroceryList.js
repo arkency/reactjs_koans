@@ -53,7 +53,6 @@ describe("05 - Challenge - Grocery List", () => {
 
       let groceryItem = _.last(groceryListItems);
       assert.equal(groceryItem.props.children, "Oranges", "GroceriesListItem should display a grocery name");
-      assert.equal(groceryItem.props.className, "", "GroceriesListItem should not be selected by default");
     });
 
     it('Should not be possible to add empty element', () => {

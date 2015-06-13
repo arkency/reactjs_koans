@@ -41,6 +41,7 @@ class GroceryList extends React.Component {
   // Fill the definition of the following method to allow adding new items to the list
   // Hint #1: You should use the `concat` function to modify groceries list.
   // Hint #2: Remember about case where input is empty.
+  // Hint #3: Name of the new grocery item will be stored in `this.state.newGroceryName`.
   addGroceryItem() {
     // Put your code here
   }
