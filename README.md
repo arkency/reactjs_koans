@@ -29,8 +29,8 @@ You can run webserver and see your changes live in your web browser:
 
   1. You should fill code in `exercises` directory and run tests to see if you did everything right.
   2. You must do exercises in given order.
-  3. Try to not peak tests files! They contain spoilers.
-  4. To run tests, use `npm run test-es6`
+  3. Try to not peek at the tests files! They contain spoilers.
+  4. To run tests, use `npm run test-es6`. To automatically run tests when your code changes, use `npm run watch`.
 
 ## Additional resources
 
