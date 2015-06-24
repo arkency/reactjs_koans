@@ -6,7 +6,8 @@
   "scripts": {
     "setup": "scripts/setup.sh",
     "start": "./node_modules/nodemon/bin/nodemon.js server.js",
-    "test-es6": "jsx -x jsx --es6module exercises/es6 src/es6 >/dev/null && mocha -b --compilers js:mocha-traceur -r test/es6/helpers.js test/es6/**/*.js ; true"
+    "test-es6": "jsx -x jsx --es6module exercises/es6 src/es6 >/dev/null && mocha -b --compilers js:mocha-traceur -r test/es6/helpers.js test/es6/**/*.js ; true",
+    "watch": "onchange exercises/es6/*.jsx -- npm run test-es6"
   },
   "repository": {
     "type": "git",
@@ -24,18 +25,19 @@
   },
   "homepage": "https://github.com/arkency/reactjs_koans",
   "devDependencies": {
-    "express": "^4.12.4",
-    "jsdom": "^3.1.2",
-    "mocha": "^2.2.4",
-    "mocha-traceur": "^2.1.0",
-    "react": "^0.13.3",
-    "react-tools": "^0.13.3",
-    "react-hot-loader": "^1.2.3",
-    "lodash": "^3.8.0",
     "babel-core": "^5.5.1",
     "babel-loader": "^5.1.3",
+    "express": "^4.12.4",
+    "jsdom": "^3.1.2",
+    "lodash": "^3.8.0",
+    "mocha": "^2.2.4",
+    "mocha-traceur": "^2.1.0",
+    "nodemon": "^1.3.7",
+    "onchange": "^1.1.0",
+    "react": "^0.13.3",
+    "react-hot-loader": "^1.2.3",
+    "react-tools": "^0.13.3",
     "webpack": "^1.9.10",
-    "webpack-dev-server": "^1.9.0",
-    "nodemon": "^1.3.7"
+    "webpack-dev-server": "^1.9.0"
   }
 }
