@@ -54,3 +54,11 @@ You can use special **20% discount code: KOANS**.
   * [React docs](https://facebook.github.io/react/docs/getting-started.html) - it's a great source of in-depth information about React.
   * [Why keys are important in React](http://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/) - great reading explaining the reason for React's keys.
   * [Reactiflux](http://www.reactiflux.com/). User group on Slack. You can meet a lot of people using React there. There's a channel for beginners `needhelp`.
+
+## About
+
+<img src="http://arkency.com/images/arkency.png" alt="Arkency" width="20%" align="left" />
+
+React Koans is funded and maintained by Arkency. Check out our other [open-source projects](https://github.com/arkency).
+
+You can also [hire us](http://arkency.com) or [read our blog](http://blog.arkency.com).
