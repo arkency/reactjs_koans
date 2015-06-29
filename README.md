@@ -30,9 +30,27 @@ You can run a webserver and see your changes live in your web browser:
   3. Try to not peek at the test files! They contain spoilers.
   4. To run the tests, use `npm run test-es6`. To automatically run tests when your code changes, use `npm run watch`.
 
+## Story of this project
+
+<img src="http://blog.arkency.com/assets/images/react-for-rails/cover-fit.png" alt="Rails meets React.js" width="33%" style="margin-right: 3em" align="right" />
+
+We first started teaching React with our book for Rails developers. However, we found out that learning from book isn't the most suitable way of learning for everyone. Even though we had hands-on example, we decided to cover basics of React using the koans format.
+
+We covered more advanced topics of React in this book. If you're interested in expanding your knowledge this book can be a great fit. It is aimed for Rails developers mostly, but you don't need to know Rails - React and its concepts are the core of this book.
+
+For the price of the book, you get:
+
+* 150~ pages of **hands-on examples, basic theorethical background, tips for testing and best practices**;
+* 50~ pages of bonus content - **examples of React in action, more advanced topics and interesting worldviews about creating rich frontends**;
+* an additonal **repository of code examples** bundled with the book, so you can take examples from the book and fiddle with them;
+
+You can use special **20% discount code: KOANS**. 
+
+[Grab your copy today](https://arkency.dpdcart.com/cart/view?referer=http%3A%2F%2Fblog.arkency.com%2Frails-react%2F&product_id=106660-rails-meets-react-js&__dpd_cart=9f8ff667-a25b-4b05-9a9f-d93653ec28b0) or [download a free chapter](http://blog.arkency.com/assets/misc/rails-meets-react/rails-meets-react-sample.pdf)
+
+
 ## Additional resources
 
   * [React docs](https://facebook.github.io/react/docs/getting-started.html) - it's a great source of in-depth information about React.
-  * [Rails Meets React](http://blog.arkency.com/rails-react/) - book explaining how to use React.js for Ruby on Rails developers (**20% off code: KOANS**).
   * [Why keys are important in React](http://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/) - great reading explaining the reason for React's keys.
   * [Reactiflux](http://www.reactiflux.com/). User group on Slack. You can meet a lot of people using React there. There's a channel for beginners `needhelp`.
