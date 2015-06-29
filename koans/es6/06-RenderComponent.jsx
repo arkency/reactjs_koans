@@ -1,6 +1,6 @@
 var React = require('react');
 
-// Congratulations for completing your first React challange!
+// Congratulations for completing your first React challenge!
 // You have already learned how to create React's components and how they affect
 // each other. This excercise you will learn how to render components on the web page.
 //
