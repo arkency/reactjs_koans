@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "setup": "scripts/setup.sh",
-    "start": "./node_modules/nodemon/bin/nodemon.js server.js",
+    "start": "nodemon server.js",
     "test-es6": "jsx -x jsx --es6module exercises/es6 src/es6 >/dev/null && mocha -b --compilers js:mocha-traceur -r test/es6/helpers.js test/es6/**/*.js ; true",
     "watch": "onchange exercises/es6/*.jsx -- npm run test-es6"
   },
