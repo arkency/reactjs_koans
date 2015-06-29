@@ -1,7 +1,7 @@
 import LifecycleMethodsComponent from '../../src/es6/07-LifecycleMethods.js';
 import sinon from 'sinon';
 
-describe("06 - Lifecycle methods", () => {
+describe("07 - Lifecycle methods", () => {
   var component;
 
   describe("Task #1 - emit a console log when the component mounts", () => {
