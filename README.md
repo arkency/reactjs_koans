@@ -15,7 +15,7 @@ The Koans are a set of tasks to complete. Prepared tests checks if they are done
  * The `koans` directory contains the source of all the exercises. `test` contains the tests.
  * `src` a contains files compiled from `exercises`.
  * `build` contains sources launched in the web browser version of Koans.
- 
+
 ## Start a local web server (optional)
 
 You can run a webserver and see your changes live in your web browser:
@@ -44,7 +44,7 @@ For the price of the book, you get:
 * 50~ pages of bonus content - **examples of React in action, more advanced topics and interesting worldviews about creating rich frontends**;
 * an additonal **repository of code examples** bundled with the book, so you can take examples from the book and fiddle with them;
 
-You can use special **20% discount code: KOANS**. 
+You can use special **20% discount code: KOANS**.
 
 [Grab your copy today](https://arkency.dpdcart.com/cart/view?referer=http%3A%2F%2Fblog.arkency.com%2Frails-react%2F&product_id=106660-rails-meets-react-js&__dpd_cart=9f8ff667-a25b-4b05-9a9f-d93653ec28b0) or [download a free chapter](http://blog.arkency.com/assets/misc/rails-meets-react/rails-meets-react-sample.pdf)
 
@@ -54,6 +54,10 @@ You can use special **20% discount code: KOANS**.
   * [React docs](https://facebook.github.io/react/docs/getting-started.html) - it's a great source of in-depth information about React.
   * [Why keys are important in React](http://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/) - great reading explaining the reason for React's keys.
   * [Reactiflux](http://www.reactiflux.com/). User group on Slack. You can meet a lot of people using React there. There's a channel for beginners `needhelp`.
+
+## License
+
+The project is licensed under the MIT license. You can read more about it in [LICENSE file](https://github.com/arkency/reactjs_koans/blob/master/LICENSE)
 
 ## About
 
