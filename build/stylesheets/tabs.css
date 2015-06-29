@@ -71,3 +71,7 @@
 .tab-content ul li.selected {
   color: #444444;
 }
+.tab-content ul li.completed {
+  color: #440000;
+  text-decoration: line-through;
+}
