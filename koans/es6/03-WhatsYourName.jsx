@@ -4,11 +4,11 @@ var React = require("react");
 //
 // Each React component has 2 important hashes:
 // * Properties - we pass these values when we create component. They don't
-//                change over entire life of component.
-// * State      - these values can change over entire life of component.
+//                change over entire life of the component.
+// * State      - these values can change over entire life of the component.
 //                When you change some value in `state` object, React will
-//                re-calculate `render` method and update HTML to look exactly
-//                like specified in class.
+//                re-calculate the `render` method and update the HTML to match
+//                the new state (in this case, updating the class).
 //
 // You can pass properties to components using JSX attributes. You did it in
 // the last exercise! See the example below.
@@ -21,15 +21,15 @@ var React = require("react");
 // `{className: "example-class", attr1: "ugabuga"}`
 //
 // You have two tasks to complete in this exercise:
-// Task #1: Someone left broken `onNameChange` method. It is always triggered
+// Task #1: Someone left broken code in the `onNameChange` method. It is always triggered
 //          after changing the value of `username` input. This method takes
-//          event as its only argument. You need to retrieve input value from
-//          that object and update the `name` field in `state` object.
+//          event as its only argument. You need to retrieve the input value from
+//          that object and update the `name` field in the `state` object.
 // Warning: Do not try to change the `render` structure.
 //
-// Task #2: If there is no name given, we should display message encouraging
-//          user to insert his name.
-//          Display text: "Hey there. Enter your name." if name length is 0.
+// Task #2: If there is no name given, we should display a message encouraging
+//          the user to insert his or her name.
+//          Display text: "Hey there. Enter your name." if name.length is 0.
 //
 //          Hint: Use temporary variables to achieve the goal. See the example below.
 //          ```
@@ -48,17 +48,17 @@ var React = require("react");
 // Further reading on task #2: https://facebook.github.io/react/tips/if-else-in-JSX.html
 
 class WhatsYourName extends React.Component {
-  // By default `this.state` is `null`. In rendering method we are referring to
-  // the specific element from `state` object - `this.state.name`.
-  // If we don't set initial state, we will get error. It's impossible to fetch
+  // By default `this.state` is `null`. In `render` we are referring to
+  // a specific element from the `state` object - `this.state.name`.
+  // If we don't set an initial state, we will get an error. It's impossible to fetch
   // an object key from `null`.
   //
-  // Think about it: you can set username from cookie on component initialization!
+  // Think about it: you can set username from a cookie on component initialization!
   //                 What else could you do here?
 
   constructor(props) {
     // Properties object is called `props`. You can access it with `this.props`.
-    // We won't use them in this exercise.
+    // We won't use it in this exercise.
     super(props);
     this.state = { name: "" };
 
@@ -70,10 +70,10 @@ class WhatsYourName extends React.Component {
   // object thrown by React on actions like `click`, `change` etc.
   //
   // You need to correct the call of `setState` method. Just try to set
-  // `username` field to the value passed in event.
+  // the `username` field to the value passed in event.
   //
-  // Hint: use `console.log` to check `event.target`. You will find there text
-  //       entered to the input.
+  // Hint: use `console.log` to check `event.target`. You will find text
+  //       entered to the input there.
   onNameChange(event) {
     // Huh... There's something wrong here...
     this.setState({bad_attribute: "ChangeME!"});
@@ -92,12 +92,12 @@ class WhatsYourName extends React.Component {
 // Notice some details here:
 //   1. `onChange` attribute isn't placed between `" "`, but `{ }` - we want to
 //      reference function, not string.
-//   2. You must be very careful on methods binding. You can do it in constructor.
+//   2. You must be very careful on methods binding. You can do it in the constructor.
 //   3. `state` object is `null` by default! If you want to display initial
 //       value from state object, you should initialize state object.
 
 // ProTip: Always specify input's `name` attribute: React uses it to identify
-//         inputs on page. Not doing so, may cause some long time wasted
+//         inputs on page. Not doing so may cause you to waste a long time
 //         debugging your program.
 
 export default WhatsYourName;

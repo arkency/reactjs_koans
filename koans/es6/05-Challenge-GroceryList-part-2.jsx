@@ -1,13 +1,13 @@
 var React = require("react");
 
-// We continue our journey with reactive grocery list. We implemented previous
+// We continue our journey with reactive grocery list. We implemented the previous
 // task ourselves. You can see our example implementation.
 //
 // Task: You have to implement adding items to list. Create the implementation
-//       of the `addGroceryItem` method. This method should modify `GroceryList`
+//       of the `addGroceryItem` method. This method should modify the `GroceryList`
 //       component's state and by that re-render this component.
 //
-//       You need to render input and button in `GroceryList` (after the
+//       You need to render an input and button in `GroceryList` (after the
 //       groceries list). Users will use them as an input for new groceries.
 //
 //       We prepared two components for you. Please render the button and
@@ -16,7 +16,7 @@ var React = require("react");
 //       Hint: See `render` method body. Look for `newProductInput` and
 //             `newProductAddButton` variables
 //
-//       Do you remember how we used `onChange` event in third exercise?
+//       Do you remember how we used `onChange` event in the third exercise?
 
 
 class GroceryList extends React.Component {
@@ -40,7 +40,7 @@ class GroceryList extends React.Component {
 
   // Fill the definition of the following method to allow adding new items to the list
   // Hint #1: You should use the `concat` function to modify groceries list.
-  // Hint #2: Remember about case where input is empty.
+  // Hint #2: Remember about the case where input is empty.
   // Hint #3: Name of the new grocery item will be stored in `this.state.newGroceryName`.
   addGroceryItem() {
     // Put your code here
@@ -61,7 +61,7 @@ class GroceryList extends React.Component {
 
     // Here are components for task #2.
     newProductInput = <input className='new-item' type="text" onChange={this.inputChanged}/>;
-    // Something is missing here... Will anything happen if you click these button now?
+    // Something is missing here... Will anything happen if you click this button now?
     newProductAddButton = <button className='add-product'>Add new Product</button>;
 
     return (

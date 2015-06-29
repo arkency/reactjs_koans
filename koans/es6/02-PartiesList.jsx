@@ -1,7 +1,7 @@
 var React = require("react");
 
 // We will work on creating dynamic list of parties nearby.
-// Let's see how to render list of items.
+// Let's see how to render a list of items.
 //
 // TASK #1: Add another party (or parties) to the list.
 // TASK #2: Change `ul` HTML attribute `class` to 'parties-list'.
