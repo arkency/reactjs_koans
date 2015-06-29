@@ -1,7 +1,7 @@
 var React = require('react');
 
 // Congratulations for completing your first React challange!
-// You have already learnt how to create React's components and how they affect
+// You have already learned how to create React's components and how they affect
 // each other. This excercise you will learn how to render components on the web page.
 //
 // Task #1: Fill the `renderNameComponent` function. It should render ReactElement
@@ -17,16 +17,16 @@ function renderNameComponent(domNode) {
   // Put your code here
 }
 
-// Hint: You have to use `React.render(ReactElement element, DOMNode node)` method.
+// Hint: You have to use the `React.render(ReactElement element, DOMNode node)` method.
 //       As you can see, this method takes two parameters:
 //       `ReactElement` and DOM node.
 //
-//       Don't mistake `React.render` with `render` method in component class.
+//       Don't mistake `React.render` with `render` method in a component class.
 //       They are completely different methods!
 //
 //       Notice that class `Name` has type `React.Component`.
 //       It's a ReactComponent, not a ReactElement! You need to create an
-//       element from component before putting it into DOM. One way of doing
+//       element from the component before putting it into DOM. One way of doing
 //       that is using `React.createElement(ReactComponent component)`. E.g.
 //
 //       `let element = React.createElement(Name);`
