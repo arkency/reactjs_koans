@@ -1,10 +1,8 @@
 # React.js Koans
 
-If you want to learn React.js you came into right place. We prepared set of practical exercises that
-will help you learn React.js from zero. There is no starting knowledge required. Only thing you need
-to know is JavaScript (of course).
+If you want to learn React.js you came to the right place. We prepared a set of practical exercises that will help you learn React.js from square one. No previous knowledge is required. The only thing you need to know is JavaScript (of course).
 
-You would need to complete given tasks. Prepared test would check if they were done correctly.
+The Koans are a set of tasks to complete. Prepared tests checks if they are done correctly.
 
 ## Installation
 
@@ -13,28 +11,28 @@ You would need to complete given tasks. Prepared test would check if they were d
 
 ## Koans structure
 
- * You need to edit files only in **`exercises`** directory
- * `koans` directory contains sources of all exercises. `test` is for tests.
- * `src` is a contains files compiled from `exercises`
- * `build` contains sources launched in web browser version of Koans.
+ * Edit the files found in the **`exercises`** directory.
+ * The `koans` directory contains the source of all the exercises. `test` contains the tests.
+ * `src` a contains files compiled from `exercises`.
+ * `build` contains sources launched in the web browser version of Koans.
  
-## Start local web server (optional)
+## Start a local web server (optional)
 
-You can run webserver and see your changes live in your web browser:
+You can run a webserver and see your changes live in your web browser:
 
   1. Run command `npm run start`
   2. Visit http://localhost:8080/
 
 ## Instructions
 
-  1. You should fill code in `exercises` directory and run tests to see if you did everything right.
-  2. You must do exercises in given order.
-  3. Try to not peek at the tests files! They contain spoilers.
-  4. To run tests, use `npm run test-es6`. To automatically run tests when your code changes, use `npm run watch`.
+  1. Work on the code found in the `exercises` directory and run the tests to see if you did everything right.
+  2. You need to do the exercises in the given order.
+  3. Try to not peek at the test files! They contain spoilers.
+  4. To run the tests, use `npm run test-es6`. To automatically run tests when your code changes, use `npm run watch`.
 
 ## Additional resources
 
   * [React docs](https://facebook.github.io/react/docs/getting-started.html) - it's a great source of in-depth information about React.
   * [Rails Meets React](http://blog.arkency.com/rails-react/) - book explaining how to use React.js for Ruby on Rails developers (**20% off code: KOANS**).
-  * [Why keys are important in React](http://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/) - great reading explaining the reason of React's keys.
-  * [Reactiflux](http://www.reactiflux.com/). User group on Slack. You can meet there a lot of people using React. There's a channel for begineers `needhelp`.
+  * [Why keys are important in React](http://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/) - great reading explaining the reason for React's keys.
+  * [Reactiflux](http://www.reactiflux.com/). User group on Slack. You can meet a lot of people using React there. There's a channel for beginners `needhelp`.
