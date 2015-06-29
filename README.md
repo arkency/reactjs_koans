@@ -35,6 +35,6 @@ You can run webserver and see your changes live in your web browser:
 ## Additional resources
 
   * [React docs](https://facebook.github.io/react/docs/getting-started.html) - it's a great source of in-depth information about React.
-  * [Rails Meets React](http://blog.arkency.com/rails-react/) - book explaining how to use React.js for Ruby on Rails developers.
+  * [Rails Meets React](http://blog.arkency.com/rails-react/) - book explaining how to use React.js for Ruby on Rails developers (**20% off code: KOANS**).
   * [Why keys are important in React](http://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/) - great reading explaining the reason of React's keys.
   * [Reactiflux](http://www.reactiflux.com/). User group on Slack. You can meet there a lot of people using React. There's a channel for begineers `needhelp`.
