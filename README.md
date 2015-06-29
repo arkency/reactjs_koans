@@ -57,7 +57,7 @@ You can use special **20% discount code: KOANS**.
 
 ## License
 
-The project is licensed under the MIT license. You can read more about it in [LICENSE file](https://github.com/arkency/reactjs_koans/blob/master/LICENSE)
+The project is licensed under the free MIT license. You can read more about it in the [LICENSE file](https://github.com/arkency/reactjs_koans/blob/master/LICENSE)
 
 ## About
 
