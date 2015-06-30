@@ -8,7 +8,8 @@ import React from 'react';
 //
 // There are three methods that are widely used:
 // * componentDidMount - this method fires when React component is rendered for
-//                       the first time on the client.
+//                       the first time in the web browser. It does not run when
+//                       you render component using server-side rendering.
 //                       A render can be caused by an explicit React.render
 //                       call or when a child component is rendered within a render
 //                       method of its parent component.
