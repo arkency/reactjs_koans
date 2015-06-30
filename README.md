@@ -6,7 +6,7 @@ The Koans are a set of tasks to complete. Prepared tests checks if they are done
 
 ## Installation
 
-  1. `git clone git@github.com:arkency/reactjs_koans.git`
+  1. `git clone https://github.com/arkency/reactjs_koans.git`
   2. `cd reactjs_koans` 
   3. `npm run setup`
 
