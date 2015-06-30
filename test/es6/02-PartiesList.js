@@ -26,7 +26,7 @@ describe("02 - Parties List", () => {
 
     it("Task #2: List has proper class attribute", () => {
       var list = React.addons.TestUtils.findRenderedDOMComponentWithTag(component, 'ul');
-      assert.equal(list.props.className, 'parties-list', "List of parties should have class attrivutes specified in exercise");
+      assert.equal(list.props.className, 'parties-list', "List of parties should have class attributes specified in exercise");
     });
   });
 
