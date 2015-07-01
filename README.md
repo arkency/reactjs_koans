@@ -33,6 +33,10 @@ You can run a webserver and see your changes live in your web browser:
   3. Try to not peek at the test files! They contain spoilers.
   4. To run the tests, use `npm run test-es6`. To automatically run tests when your code changes, use `npm run watch`.
 
+## Join our newsletter
+
+Join our [React.js Kung Fu newsletter](http://eepurl.com/br5PF1) and receive free React.js lessons every know and then.
+
 ## Story of this project
 
 <img src="http://blog.arkency.com/assets/images/react-for-rails/cover-fit.png" alt="Rails meets React.js" width="33%" style="margin-right: 3em" align="right" />
