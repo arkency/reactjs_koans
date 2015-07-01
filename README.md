@@ -37,11 +37,11 @@ You can run a webserver and see your changes live in your web browser:
 
 <img src="http://blog.arkency.com/assets/images/react-for-rails/cover-fit.png" alt="Rails meets React.js" width="33%" style="margin-right: 3em" align="right" />
 
-We first started teaching React with our book for Rails developers. However, we found out that learning from book isn't the most suitable way of learning for everyone. Even though we had hands-on example, we decided to cover basics of React using the koans format.
+We first started teaching React with our ebook for Rails developers. However, we found out that learning from book isn't the most suitable way of learning for everyone. Even though we had hands-on example, we decided to cover basics of React using the koans format.
 
 We covered more advanced topics of React in this book. If you're interested in expanding your knowledge this book can be a great fit. It is aimed for Rails developers mostly, but you don't need to know Rails - React and its concepts are the core of this book.
 
-For the price of the book, you get:
+For the price of the ebook, you get:
 
 * 150~ pages of **hands-on examples, basic theorethical background, tips for testing and best practices**;
 * 50~ pages of bonus content - **examples of React in action, more advanced topics and interesting worldviews about creating rich frontends**;
