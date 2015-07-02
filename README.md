@@ -35,7 +35,7 @@ You can run a webserver and see your changes live in your web browser:
 
 ## Join our newsletter
 
-Join our [React.js Kung Fu newsletter](http://eepurl.com/br5PF1) and receive free React.js lessons every know and then.
+Join our [React.js Kung Fu newsletter](http://eepurl.com/br5PF1) and receive free React.js lessons every now and then.
 
 ## Story of this project
 
