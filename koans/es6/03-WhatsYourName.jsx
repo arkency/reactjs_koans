@@ -70,7 +70,7 @@ class WhatsYourName extends React.Component {
   // object thrown by React on actions like `click`, `change` etc.
   //
   // You need to correct the call of `setState` method. Just try to set
-  // the `username` field to the value passed in event.
+  // the `name` field to the value passed in event.
   //
   // Hint: use `console.log` to check `event.target`. You will find text
   //       entered to the input there.
