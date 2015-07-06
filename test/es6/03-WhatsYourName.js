@@ -29,14 +29,14 @@ describe("03 - What's Your Name?", () => {
         var input     = _.first(inputs);
         var paragraph = _.first(paragraphs);
 
-        assert.equal(paragraphs.length, 1, "There should be only one paragraph on component");
-        assert.equal(inputs.length, 1, "There should be only one input on component");
+        assert.equal(paragraphs.length, 1, "There should be only one `p` element rendered by the component");
+        assert.equal(inputs.length, 1, "There should be only one `input` rendered by the component");
 
         React.addons.TestUtils.Simulate.change(input, {target: { value: "XYZ" } });
-        assert.equal(nameInParagraphEqualsTo(paragraph, 'XYZ'), true, "After changing name in input, we should see the change in paragraph.");
+        assert.equal(nameInParagraphEqualsTo(paragraph, 'XYZ'), true, "After changing name in input, I should see the change in `p` element's content. In other words: `this.state.name` should change.");
 
         React.addons.TestUtils.Simulate.change(input, {target: { value: "ZYX" } });
-        assert.equal(nameInParagraphEqualsTo(paragraph, 'ZYX'), true, "After changing name in input for the second time, we should see the change in paragraph.");
+        assert.equal(nameInParagraphEqualsTo(paragraph, 'ZYX'), true, "After changing name in input for the second time, we should see the change in `p` element. In other words: `this.state.name` should change.");
       });
     });
 
@@ -46,10 +46,9 @@ describe("03 - What's Your Name?", () => {
         var paragraph = _.first(paragraphs);
 
         React.addons.TestUtils.Simulate.change(input, {target: { value: "" } });
-        assert.equal(paragraph.props.children, "Hey there. Enter your name.", "If user didn't enter the name, show \"Hey there. Enter your name.\". See the hint in task's description. The code you need to write is almost the same.");
-
-        React.addons.TestUtils.Simulate.change(input, {target: { value: "XYZ" } });
-        assert.equal(nameInParagraphEqualsTo(paragraph, 'XYZ'), true, "When user input name, you should show greeting message in paragraph.");
+        assert.equal(paragraph.props.children, "Hey there. Enter your name.",
+          "If user didn't enter the name (`this.state.name` length is 0), show \"Hey there. Enter your name.\". See the hint in task's description."
+        );
       });
     });
   });
