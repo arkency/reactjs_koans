@@ -17,9 +17,9 @@ describe("01 - HelloWorld", () => {
     var divTags = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, 'div');
     var spanTags = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, 'span');
 
-    assert.equal(divTags.length == 0, true, "Your React component shouldn't render any `div`")
-    assert.equal(spanTags.length == 1, true, "You need to render exactly one `span` element")
+    assert.equal(divTags.length == 0, true, "Your React component shouldn't render any `div` HTML elements")
+    assert.equal(spanTags.length == 1, true, "You need to render exactly one `span` HTML element")
 
-    assert.equal(spanTags[0].props.children, "Hello World", "You have rendered wrong message in your `span`");
+    assert.equal(spanTags[0].props.children, "Hello World", "You have rendered wrong message in your `span` element");
   })
 });
