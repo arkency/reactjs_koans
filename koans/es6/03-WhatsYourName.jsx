@@ -22,7 +22,7 @@ var React = require("react");
 //
 // You have two tasks to complete in this exercise:
 // Task #1: Someone left broken code in the `onNameChange` method. It is always triggered
-//          after changing the value of `username` input. This method takes
+//          after changing the value of `name` input. This method takes
 //          event as its only argument. You need to retrieve the input value from
 //          that object and update the `name` field in the `state` object.
 // Warning: Do not try to change the `render` structure.
@@ -53,7 +53,7 @@ class WhatsYourName extends React.Component {
   // If we don't set an initial state, we will get an error. It's impossible to fetch
   // an object key from `null`.
   //
-  // Think about it: you can set username from a cookie on component initialization!
+  // Think about it: you can set name from a cookie on component initialization!
   //                 What else could you do here?
 
   constructor(props) {
@@ -83,7 +83,7 @@ class WhatsYourName extends React.Component {
     return (
       <div>
         <p>Hello {this.state.name}</p>
-        <input type="text" name="username" onChange={this.onNameChange} />
+        <input type="text" name="name" onChange={this.onNameChange} />
       </div>
     );
   }
