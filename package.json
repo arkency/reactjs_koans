@@ -4,9 +4,10 @@
   "description": "React.js Koans",
   "main": "index.js",
   "scripts": {
+    "compile": "jsx -x jsx --es6module exercises/es6 src/es6 > /dev/null 2>&1",
     "setup": "npm install && ncp koans/ exercises/",
-    "start": "nodemon server.js",
-    "test-es6": "jsx -x jsx --es6module exercises/es6 src/es6 >/dev/null && mocha -b --compilers js:mocha-traceur -r test/es6/helpers.js test/es6/**/*.js & true",
+    "start": "npm run compile > /dev/null 2>&1 && nodemon server.js",
+    "test-es6": "npm run compile > /dev/null 2>&1 && mocha -b --compilers js:mocha-traceur -r test/es6/helpers.js test/es6/**/*.js & true",
     "watch": "onchange exercises/es6/*.jsx -- npm run test-es6"
   },
   "repository": {
