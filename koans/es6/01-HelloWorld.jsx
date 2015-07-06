@@ -3,7 +3,7 @@ var React = require("react");
 // This is really simple React Component.
 // It has its own name (HelloWorld) it will be used for things like error display.
 //
-// TASK: Render HTML span with "Hello World" text.
+// Task: Render HTML span with "Hello World" text.
 
 class HelloWorld extends React.Component {
   // All components *must* have a `render` method defined.
