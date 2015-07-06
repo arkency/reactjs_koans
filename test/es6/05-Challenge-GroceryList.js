@@ -19,7 +19,7 @@ describe("05 - Challenge - Grocery List", () => {
       assert.equal(groceryListItems.length, 1, "There should be exactly one element on the groceries list");
 
       let groceryItem = _.first(groceryListItems);
-      assert.equal(groceryItem.props.children, "Apples", "GroceriesListItem should display a grocery name");
+      assert.equal(groceryItem.props.children, "Apples", "GroceryItem should render only text inside <li> tag. This text should contain only grocery item name.");
     });
   });
 
