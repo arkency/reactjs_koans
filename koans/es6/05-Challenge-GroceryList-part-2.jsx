@@ -28,13 +28,11 @@ class GroceryList extends React.Component {
       ],
       newGroceryName: ""
     };
-
-    this.addGroceryItem = this.addGroceryItem.bind(this);
-    this.inputChanged = this.inputChanged.bind(this);
   }
 
   // Warning: You shouldn't change this method
-  inputChanged(event) {
+  // Note the less verbose alternative to bind the method to `this`
+  inputChanged = (event) => {
     this.setState({newGroceryName: event.target.value});
   }
 
@@ -42,7 +40,7 @@ class GroceryList extends React.Component {
   // Hint #1: You should use the `concat` function to modify groceries list.
   // Hint #2: Remember about the case where input is empty.
   // Hint #3: Name of the new grocery item will be stored in `this.state.newGroceryName`.
-  addGroceryItem() {
+  addGroceryItem = () => {
     // Put your code here
   }
 
