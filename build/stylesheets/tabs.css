@@ -14,6 +14,9 @@
   padding-top: 5px;
   margin-right: 3px;
 }
+ul.tabs>li {
+  list-style-type: none;
+}
 .tabs label {
   display: block;
   padding: 10px 20px;
@@ -74,4 +77,28 @@
 .tab-content ul li.completed {
   color: #440000;
   text-decoration: line-through;
+}
+@media (min-width: 1565px) {
+  .tab-content{
+    top:0px;
+    margin-top:53px;
+  }
+}
+@media (max-width: 840px) {
+  .tab-content{
+    top:0px;
+    margin-top:153px;
+  }
+}
+@media (max-width: 653px) {
+  .tab-content{
+    top:0px;
+    margin-top:203px;
+  }
+}
+@media (max-width: 443px) {
+  .tab-content{
+    top:0px;
+    margin-top:353px;
+  }
 }
