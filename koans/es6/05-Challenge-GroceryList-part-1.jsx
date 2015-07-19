@@ -6,7 +6,7 @@ var React = require("react");
 // Task: Fill the `return` of `GroceryList` render method. It should return
 //       a list of `GroceryListItem`. You need to display the groceries names
 //       using `this.props` in `GroceryListItem`. We already prepared the variable
-//       `groceriesComponents` inside `render` method` containing list of these items for you.
+//       `groceriesComponents` inside `render` method containing a list of these items for you.
 
 class GroceryList extends React.Component {
   constructor(props) {
@@ -42,7 +42,7 @@ class GroceryList extends React.Component {
 }
 
 // Render grocery name from component's properties.
-// If you have problem check `this.props` in the console.
+// If you have a problem, check `this.props` in the console.
 class GroceryListItem extends React.Component {
   constructor(props) {
     super(props);
