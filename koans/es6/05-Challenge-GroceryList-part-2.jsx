@@ -3,7 +3,7 @@ var React = require("react");
 // We continue our journey with reactive grocery list. We implemented the previous
 // task ourselves. You can see our example implementation.
 //
-// Task: You have to implement adding items to list. Create the implementation
+// Task: You have to implement adding items to the list. Create the implementation
 //       of the `addGroceryItem` method. This method should modify the `GroceryList`
 //       component's state and by that re-render this component.
 //

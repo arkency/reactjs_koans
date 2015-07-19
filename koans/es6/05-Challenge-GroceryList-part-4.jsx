@@ -1,6 +1,6 @@
 var React = require("react");
 
-// Task: Ok now the last excersise. You have to implement toggling
+// Task: Ok, now the last exercise. You have to implement toggling
 //       completeness of the each grocery list's item. Make each item reactive.
 //
 //       This is why we prepared the declaration of the `toggleGroceryCompleteness`

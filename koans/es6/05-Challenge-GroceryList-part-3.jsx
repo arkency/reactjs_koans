@@ -1,6 +1,6 @@
 var React = require("react");
 
-// Task: User need to be able to clear whole grocery list in one click.
+// Task: User needs to be able to clear whole grocery list in one click.
 //       Render a proper button under your list and implement the `clearList` method.
 //       This method should clear the `groceries` array placed in your state.
 //       This is similar to the previous task so I don't want to say any more.
@@ -10,8 +10,8 @@ var React = require("react");
 //                method. The only exception of that rule is state definition
 //                in a component's class constructor.
 //
-//        Hint: Don't forget about adding the clearing list button to the
-//              `GroceryList` rendering method.
+//       Hint: Don't forget about adding the clearing list button to the
+//             `GroceryList` rendering method.
 
 class GroceryList extends React.Component {
   constructor(props) {

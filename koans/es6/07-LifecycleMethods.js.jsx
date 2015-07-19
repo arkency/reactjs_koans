@@ -33,13 +33,13 @@ import React from 'react';
 // Extra task: Learn about componentWillUpdate. What's the difference between
 //             this and the componentDidUpdate method? Think about the possible
 //             use cases of this lifecycle method.
-// Extra task: Learn about componentWillMount. How it can be useful?
+// Extra task: Learn about componentWillMount. How can it be useful?
 //             (Hint: Think about server-side rendering of React components)
 // Extra task: Learn about componentWillReceiveProps. How it can be used?
 //             Is it fired when you render a component for the first time?
 // Extra task: There is a method which directly modifies behavior of React
 //             itself - it's called shouldComponentUpdate.
-//             How you can use it to optimise rendering cycle of your
+//             How can you use it to optimise rendering cycle of your
 //             React components? Learn about PureRenderMixin.
 //
 // All lifecycle methods are described here:
@@ -51,7 +51,7 @@ class LifecycleMethodsComponent extends React.Component {
   }
 
   // This code will be called when the component finishes mounting
-  // (so it is visible for an user).
+  // (so it is visible for a user).
   componentDidMount() {
     // Task 1: Display a message "I'm mounted!" in developer's console when the
     //         component finishes mounting.
@@ -75,8 +75,8 @@ class LifecycleMethodsComponent extends React.Component {
     //         'clean up' external integrations from the component.
     //         Think about the use case like this: You have an event bus and
     //         you are listening for events. Your event listeners use setState
-    //         directly. What will happen if you unmount the component.
-    //         How this lifecycle method can help you to avoid such problems?
+    //         directly. What will happen if you unmount the component?
+    //         How can this lifecycle method help you to avoid such problems?
   }
 
   render() {
