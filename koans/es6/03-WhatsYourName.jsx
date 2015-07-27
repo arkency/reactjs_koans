@@ -3,7 +3,7 @@ var React = require("react");
 // Let's get to the most important feature of React.js - reactive state.
 //
 // Each React component contains 2 important hashes:
-// * Properties - we pass these values when we create component. They don't
+// * Properties - we pass these values when we create a component. They don't
 //                change over entire life of the component.
 // * State      - these values can change over entire life of the component.
 //                When you change some value in `state` object, React will
