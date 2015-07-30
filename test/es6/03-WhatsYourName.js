@@ -41,7 +41,7 @@ describe("03 - What's Your Name?", () => {
     });
 
     describe("Task #2 - don't greet user if name wasn't provided", () => {
-      it("Should display welcoming message if user didn't provide his name", () => {
+      it("Should display welcoming message if user didn't provide their name", () => {
         var input     = _.first(inputs);
         var paragraph = _.first(paragraphs);
 
