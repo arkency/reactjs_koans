@@ -28,7 +28,7 @@ var React = require("react");
 // Warning: Do not try to change the `render` structure.
 //
 // Task #2: If there is no name given, we should display a message encouraging
-//          the user to insert his or her name.
+//          the user to insert their name.
 //          Display text: "Hey there. Enter your name." if name.length is 0.
 //
 //          Hint: Use temporary variables to achieve the goal. See the example below.
