@@ -41,17 +41,15 @@ Join our [React.js Kung Fu newsletter](http://eepurl.com/br5PF1) and receive fre
 
 <img src="http://reactkungfu.com/assets/images/rbe-cover.png" alt="Rails meets React.js" width="33%" style="margin-right: 3em" align="right" />
 
-We first started teaching React with our [*Rails meets React.js* book](http://blog.arkency.com/rails-react/). However, we found out that learning from book isn't the most suitable way of learning for everyone. Even though we had hands-on example, we decided to cover basics of React using the koans format. However we didn't stop here. We wanted not only Rails developers to learn React.
+We first started teaching React with our [*Rails meets React.js* ebook](http://blog.arkency.com/rails-react/). However, we found out that learning from book isn't the most suitable way of learning for everyone. Even though we had hands-on example, we decided to cover basics of React using the koans format.
 
-After completing koans, you will be able to jump onto complex examples. We prepared something that will be a great fit for you - book *React by example*. With it, you will learn more advanced techniques of React by playing with code from examples you may have seen on popular websites (like password-strength meter).
+For non-rails people we prepared something els - *React by example*. In it, we explain how to create common and popular widgets like password-strength meter or credit card input.
 
 For the price of the ebook, you get:
 
 * Over 140 pages of React content. From fast introduction to React to example Todo app;
 * 11 practical real-world examples;
 * Repositories with code for most of the examples;
-
-The book is in an early access. It means that the content may change and there will be more examples in the future.
 
 You can use special **20% discount code: REACTKOANS**.
 [Grab your copy today](https://arkency.dpdcart.com/cart/add?product_id=113689&method_id=120078) or [download a free chapter](http://reactkungfu.com/assets/misc/sample.pdf)
