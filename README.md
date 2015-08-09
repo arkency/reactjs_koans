@@ -43,7 +43,7 @@ Join our [React.js Kung Fu newsletter](http://eepurl.com/br5PF1) and receive fre
 
 We first started teaching React with our [*Rails meets React.js* ebook](http://blog.arkency.com/rails-react/). However, we found out that learning from book isn't the most suitable way of learning for everyone. Even though we had hands-on example, we decided to cover basics of React using the koans format.
 
-For non-rails people we prepared something els - *React by example*. In it, we explain how to create common and popular widgets like password-strength meter or credit card input.
+For non-rails people we prepared something else - *React by example*. In it, we explain how to create common and popular widgets like password-strength meter or credit card input.
 
 For the price of the ebook, you get:
 
