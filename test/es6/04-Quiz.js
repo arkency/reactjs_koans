@@ -13,7 +13,7 @@ describe("04 - Quiz", () => {
     assert.equal(Answers.answer3 === 'render', true, "In every component we created, there was one method. It contained JSX code.");
   });
 
-  it("question #4", () => {
+  it("Question #4", () => {
     assert.equal(Answers.answer4 === 'className', true, "`class` is a reserved word in JavaScript. See JSX code in exercise #2.");
   });
 
