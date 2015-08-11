@@ -47,3 +47,6 @@ button:hover {
   background: none repeat scroll 0 0 #444444;
   color: #FFFFFF;
 }
+button[disabled] {
+  opacity: 0.5;
+}
