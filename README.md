@@ -69,7 +69,7 @@ The project is licensed under the free MIT license. You can read more about it i
 
 ## About
 
-<img src="http://arkency.com/images/arkency.png" alt="Arkency" width="20%" align="left" />
+<img src="http://arkency.com/images/arkency.png" alt="Arkency" width="14%" align="left" />
 
 React Koans is funded and maintained by Arkency. Check out our other [open-source projects](https://github.com/arkency).
 
