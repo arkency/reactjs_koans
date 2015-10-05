@@ -12,6 +12,8 @@ Make sure you have Node.js and Python 2 installed.
   2. `cd reactjs_koans`
   3. `npm run setup`
 
+Having troubles with installation? Try using Node.js in `0.12` version. You can use [`nvm`](https://github.com/creationix/nvm) to install multiple versions on Node on your machine.
+
 ## Koans structure
 
  * Edit the files found in the **`exercises`** directory.
@@ -37,7 +39,7 @@ You can run a webserver and see your changes live in your web browser:
 
 Join our [React.js Kung Fu newsletter](http://eepurl.com/br5PF1) and receive free React.js lessons every now and then.
 
-## Story of this project
+## More than just Koans
 
 <img src="http://reactkungfu.com/assets/images/rbe-cover.png" alt="Rails meets React.js" width="33%" style="margin-right: 3em" align="right" />
 
