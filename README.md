@@ -1,6 +1,6 @@
 # React.js Koans
 
-If you want to learn React.js you came to the right place. We prepared a set of practical exercises that will help you learn React.js from square one. The only thing you need to know is JavaScript (of course).
+If you want to learn React.js you came to the right place. We prepared a set of practical exercises that will help you learn React.js from square one. The only thing you need to know is JavaScript.
 
 The Koans are a set of tasks to complete. Prepared tests checks if they are done correctly.
 
