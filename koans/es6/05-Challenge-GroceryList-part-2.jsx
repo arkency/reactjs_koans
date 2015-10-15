@@ -54,6 +54,7 @@ class GroceryList extends React.Component {
     for(var index = 0; index < this.state.groceries.length; index++) {
       groceriesComponents.push(
           <GroceryListItem
+            key={index}
             grocery={this.state.groceries[index]}
           />
       );

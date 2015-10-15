@@ -34,7 +34,10 @@ class GroceryList extends React.Component {
 
   addGroceryItem() {
     if(this.state.newGroceryName) {
-      let newGroceryItem = { name: this.state.newGroceryName };
+      let newGroceryItem = {
+        id: this.state.groceries.length,
+        name: this.state.newGroceryName
+      };
       this.setState({
         groceries: this.state.groceries.concat([newGroceryItem])
       });
@@ -56,6 +59,7 @@ class GroceryList extends React.Component {
     for(var index = 0; index < this.state.groceries.length; index++) {
       groceriesComponents.push(
           <GroceryListItem
+            key={index}
             grocery={this.state.groceries[index]}
           />
       );
