@@ -23,7 +23,7 @@ var Answers = {
 
   // Question #6: What's the name of the method for changing the component's state?
   // Tip: See exercise #3
-  answer6: 'stateSet',
+  answer6: 'answer',
 
   // Question #7: You must bind a component's methods (except `render`)
   //              to make it possible to change the state. True or false?
