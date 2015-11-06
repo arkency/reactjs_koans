@@ -1,4 +1,4 @@
-import renderNameComponent from '../../src/es6/06-RenderComponent.js';
+import renderNameComponent from '../src/06-RenderComponent.js';
 
 describe("06 - RenderComponent", () => {
 

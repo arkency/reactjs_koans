@@ -1,4 +1,4 @@
-import WhatsYourName from '../../src/es6/03-WhatsYourName.js';
+import WhatsYourName from '../src/03-WhatsYourName.js';
 
 describe("03 - What's Your Name?", () => {
   var component;

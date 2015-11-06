@@ -1,4 +1,4 @@
-import Answers from '../../src/es6/04-Quiz.js';
+import Answers from '../src/04-Quiz.js';
 
 describe("04 - Quiz", () => {
   it("Question #1", () => {

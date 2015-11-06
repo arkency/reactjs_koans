@@ -1,4 +1,4 @@
-import HelloWorld from '../../src/es6/01-HelloWorld.js';
+import HelloWorld from '../src/01-HelloWorld.js';
 
 describe("01 - HelloWorld", () => {
   var component;

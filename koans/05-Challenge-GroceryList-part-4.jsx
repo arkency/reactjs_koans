@@ -33,7 +33,7 @@ var React = require("react");
 //             Hint: There are no tests for this extra task. You need to do them
 //                   yourself. You can perform manual-testing (meh.)
 //                   Or try to create your own tests.
-//                   Check out `test/es6/05-Challange-GroceryList.js` for tests to this part.
+//                   Check out `test/05-Challange-GroceryList.js` for tests to this part.
 //
 // Extra Task: Extract creation (`addGroceryItem`) of grocery to external service.
 

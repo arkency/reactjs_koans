@@ -1,4 +1,4 @@
-import PartiesList from '../../src/es6/02-PartiesList.js';
+import PartiesList from '../src/02-PartiesList.js';
 
 describe("02 - Parties List", () => {
   var component;
