@@ -9,7 +9,7 @@
     "nodemon": "nodemon",
     "start": "npm run compile && npm run nodemon server.js",
     "mocha": "mocha",
-    "test": "npm run compile && npm run mocha -b",
+    "test": "npm run compile && npm run mocha",
     "watch": "onchange exercises/*.jsx -- npm run test"
   },
   "repository": {
