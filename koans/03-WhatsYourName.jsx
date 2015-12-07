@@ -76,7 +76,11 @@ class WhatsYourName extends React.Component {
   //       entered to the input there.
   onNameChange(event) {
     // Huh... There's something wrong here...
-    this.setState({bad_attribute: "ChangeME!"});
+    var name = event.target.name,
+        value = event.target.value;
+
+    this.state[name] = value;
+    this.setState(this.state);
   }
 
   render() {
