@@ -6,7 +6,7 @@ The Koans are a set of tasks to complete. Prepared tests checks if they are done
 
 ## Installation
 
-Make sure you have Node.js (ver. > 4) and Python 2 installed.
+Make sure you have Node.js and Python 2 installed.
 
   1. `git clone https://github.com/arkency/reactjs_koans.git`
   2. `cd reactjs_koans`
@@ -33,15 +33,14 @@ You can run a webserver and see your changes live in your web browser:
   3. Try to not peek at the test files! They contain spoilers.
   4. To run the tests, use `npm run test`. To automatically run tests when your code changes, use `npm run watch`.
 
-## Join our newsletter
-
-Join our [React.js Kung Fu newsletter](http://eepurl.com/br5PF1) and receive free React.js lessons every now and then.
 
 ## More than just Koans
 
-<img src="http://reactkungfu.com/assets/images/rbe-cover.png" alt="Rails meets React.js" width="33%" style="margin-right: 3em" align="right" />
+If you want to read more about React.js and modern JavaScript applications, check out our [React Kung Fu blog](http://reactkungfu.com/).
 
-For people finishing Koans, we prepared something to go further: the *React by example book*. In it, we explain how to create common and popular widgets like password-strength meter or credit card input.
+For people who finished Koans, we prepared something to go continue: the *React by example book*. In this book, we explain how to create common widgets like password-strength meter or credit card input.
+
+<img src="http://reactkungfu.com/assets/images/rbe-cover.png" alt="Rails meets React.js" width="33%" style="margin-right: 3em" align="right" />
 
 For the price of the ebook, you get:
 
@@ -53,7 +52,6 @@ It's an early version of the book. It means some wording in book may change and 
 
 You can use special **20% discount code: REACTKOANS**.
 [Grab your copy today](https://arkency.dpdcart.com/cart/add?product_id=113689&method_id=120078) or [download a free chapter](http://reactkungfu.com/assets/misc/sample.pdf)
-
 
 ## Additional resources
 
