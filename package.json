@@ -6,10 +6,8 @@
   "scripts": {
     "compile": "babel exercises --out-dir src",
     "setup": "npm install && ncp koans/ exercises/",
-    "nodemon": "nodemon",
-    "start": "npm run compile && npm run nodemon server.js",
-    "mocha": "mocha",
-    "test": "npm run compile && npm run mocha",
+    "start": "npm run compile && nodemon server.js",
+    "test": "npm run compile && mocha -b --compilers js:babel/register --require test/helpers.js test/**/*.js",
     "watch": "onchange exercises/*.jsx -- npm run test"
   },
   "repository": {
