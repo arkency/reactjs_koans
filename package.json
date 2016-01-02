@@ -1,6 +1,6 @@
 {
   "name": "reactjs_koans",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "React.js Koans",
   "main": "index.js",
   "scripts": {
