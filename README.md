@@ -63,9 +63,6 @@ You can use special **20% discount code: REACTKOANS**.
   * [Why keys are important in React](http://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/) - great reading explaining the reason for React's keys.
   * [Reactiflux](http://www.reactiflux.com/). User group on Slack. You can meet a lot of people using React there. There's a channel for beginners `needhelp`.
 
-## License
-
-The project is licensed under the free MIT license. You can read more about it in the [LICENSE file](https://github.com/arkency/reactjs_koans/blob/master/LICENSE)
 
 ## About
 
