@@ -33,6 +33,11 @@ You can run a webserver and see your changes live in your web browser:
   3. Try to not peek at the test files! They contain spoilers.
   4. To run the tests, use `npm run test`. To automatically run tests when your code changes, use `npm run watch`.
 
+## Video walkthrough
+
+ * [Koans Installation](https://www.youtube.com/watch?v=Csf909B5_Qg)
+ * [Walkthrough - Exercise #1](https://www.youtube.com/watch?v=wSC2Jqy3xLU)
+ * [Walkthrough - Exercise #2](https://www.youtube.com/watch?v=2iuVq17YQxM)
 
 ## More than just Koans
 
