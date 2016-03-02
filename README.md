@@ -14,7 +14,7 @@ Make sure you have Node.js and Python 2 installed.
 
 ## Koans structure
 
- * Edit the files found in the **`exercises`** directory.
+ * Edit the files found in the **`koans`** directory.
  * The `koans` directory contains the source of all the exercises. `test` contains the tests.
  * `src` a contains files compiled from `exercises`.
  * `build` contains sources launched in the web browser version of Koans.
@@ -28,7 +28,7 @@ You can run a webserver and see your changes live in your web browser:
 
 ## Instructions
 
-  1. Work on the code found in the `exercises` directory and run the tests to see if you did everything right.
+  1. Work on the code found in the `koans` directory and run the tests to see if you did everything right.
   2. You need to do the exercises in the given order.
   3. Try to not peek at the test files! They contain spoilers.
   4. To run the tests, use `npm run test`. To automatically run tests when your code changes, use `npm run watch`.
