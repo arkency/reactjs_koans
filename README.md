@@ -16,7 +16,7 @@ Make sure you have Node.js and Python 2 installed.
 
  * Edit the files found in the **`exercises`** directory.
  * The `koans` directory contains the source of all the exercises. `test` contains the tests.
- * `src` a contains files compiled from `exercises`.
+ * `src` contains files compiled from `exercises`.
  * `build` contains sources launched in the web browser version of Koans.
 
 ## Start a local web server (optional)
