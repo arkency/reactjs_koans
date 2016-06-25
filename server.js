@@ -2,10 +2,17 @@ var express = require('express');
 var app = express();
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+var buildConfig = require('./webpack.config')
+
+
+var host = 'react-koans-etherealite.c9users.io';
+var webpackPort = 8081;
+var webpackHostname= `${host}:${webpackPort}`;
+var config = buildConfig(webpackHostname);
+
 
 app.get('/app.js', function (req, res) {
-  res.redirect('//localhost:9090/build/app.js');
+  res.redirect(`//${webpackHostname}/build/app.js`);
 });
 
 app.get('/', function (req, res) {
@@ -19,7 +26,7 @@ new WebpackDevServer(webpack(config), {
     hot: true,
     noInfo: true,
     historyApiFallback: true
-  }).listen(9090, 'localhost', function (err, result) {
+  }).listen(webpackPort, process.env.IP, function (err, result) {
       if (err) {
         console.log(err);
       }
