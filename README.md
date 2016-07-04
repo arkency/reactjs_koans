@@ -48,8 +48,6 @@ If you want to read more about React.js and modern JavaScript applications, chec
 
 ### The book
 
-<img src="http://reactkungfu.com/assets/images/rbe-cover.png" alt="Rails meets React.js" width="33%" style="margin-right: 3em" align="right" />
-
 For people who finished Koans, we prepared something to go continue: the *React by example book*. In this book, we explain how to create common widgets like password-strength meter or credit card input.
 
 For the price of the ebook, you get:
