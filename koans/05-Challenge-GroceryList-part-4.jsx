@@ -34,8 +34,6 @@ var React = require("react");
 //                   yourself. You can perform manual-testing (meh.)
 //                   Or try to create your own tests.
 //                   Check out `test/05-Challange-GroceryList.js` for tests to this part.
-//
-// Extra Task: Extract creation (`addGroceryItem`) of grocery to external service.
 
 class GroceryList extends React.Component {
   constructor(props) {
