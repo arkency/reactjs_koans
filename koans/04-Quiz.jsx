@@ -2,7 +2,7 @@
 
 var Answers = {
   // Question #1: What is the name of the class that we extend to create components class?
-  // Tip: See any of the exercises
+  // Tip: See any of the koans
   answer1: "Enter your answer here",
 
   // Question #2: JSX is converted directly into JavaScript. True or false?

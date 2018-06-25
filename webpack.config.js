@@ -6,7 +6,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:9090',
     'webpack/hot/only-dev-server',
-    './exercises/main'
+    './koans/main'
   ],
 
   output: {
@@ -17,7 +17,7 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: path.join(__dirname, 'exercises'), loaders: ['react-hot', 'babel-loader']}
+      { test: path.join(__dirname, 'koans'), loaders: ['react-hot', 'babel-loader']}
     ]
   },
 
