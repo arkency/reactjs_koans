@@ -2,11 +2,11 @@ import Answers from '../src/04-Quiz.js';
 
 describe("04 - Quiz", () => {
   it("Question #1", () => {
-    assert.equal(Answers.answer1 === "React.Component", true, "Check the line that contains `extends` word in each exercise.")
+    assert.equal(Answers.answer1 === "Component", true, "Check the line that contains `extends` word in each exercise.")
   });
 
   it("Question #2", () => {
-    assert.equal(Answers.answer2, true, "JSX is not na HTML (so what is it?)");
+    assert.equal(Answers.answer2, true, "JSX is not an HTML (so what is it?)");
   });
 
   it("Question #3", () => {
@@ -26,6 +26,6 @@ describe("04 - Quiz", () => {
   });
 
   it("Question #7", () => {
-    assert.equal(Answers.answer7, true, "I'll make it easier for you: yes you have. Why? See exercise #3! It's very important.");
+    assert.equal(Answers.answer7, true, "I'll make it easier for you: yes you have to. Why? See exercise #3! It's very important.");
   });
 });
