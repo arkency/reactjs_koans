@@ -84,7 +84,7 @@ describe("05 - Challenge - Grocery List", () => {
       React.addons.TestUtils.Simulate.click(clearListButton.getDOMNode());
       let groceryListItems = React.addons.TestUtils.scryRenderedDOMComponentsWithTag(component, "li");
 
-      assert.equal(groceryListItems.length, 0, "There should be exactly zero elements on the groceries list");
+      assert.equal(groceryListItems.length, 0, "There should be no elements on the groceries list");
     });
   });
 
