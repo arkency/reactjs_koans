@@ -72,7 +72,7 @@ class WhatsYourName extends React.Component {
   // You need to correct the call of `setState` method. Just try to set
   // the `name` field to the value passed in event.
   //
-  // Hint: use `console.log` to check `event.target`. You will find text
+  // Hint: use `console.dir` to check `event.target`. You will find text
   //       entered to the input there.
   onNameChange(event) {
     // Huh... There's something wrong here...
