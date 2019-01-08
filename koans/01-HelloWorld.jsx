@@ -23,7 +23,7 @@ class HelloWorld extends React.Component {
 
   render() {
     return (
-        <div>FILL ME IN!</div>
+        <span>Hello World</span>
     );
   }
 }
